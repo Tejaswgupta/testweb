@@ -153,7 +153,7 @@ export const appUrls = {
 
 export const authors = {
 	Owner: {
-		name: "Guilherme Mota",
+		name: "Tejaswa Gupta",
 		avatarSrc: "/images/mini-avatar.png",
 		url: contactMap.github.url
 	}

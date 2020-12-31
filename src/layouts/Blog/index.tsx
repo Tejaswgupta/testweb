@@ -12,8 +12,8 @@ import { appUrls } from "@/lib/personal"
 const BlogLayout: React.FC = (props) => {
 	const { children } = props
 
-	const title = "Blog | Guilherme Mota"
-	const description = "All content shared by Guilherme Mota."
+	const title = "Blog | Tejaswa Gupta"
+	const description = "All content shared by Tejaswa Gupta"
 
 	return (
 		<BlogContainer>

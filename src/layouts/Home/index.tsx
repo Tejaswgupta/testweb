@@ -19,8 +19,8 @@ type HomeLayoutProps = {
 const HomeLayout: React.FC<HomeLayoutProps> = (props) => {
 	const { children, isMobile } = props
 
-	const title = "Guilherme Mota"
-	const description = "All info about Guilherme Mota."
+	const title = "Tejaswa Gupta"
+	const description = "All info about Tejaswa Gupta."
 
 	return (
 		<HomeContainer>

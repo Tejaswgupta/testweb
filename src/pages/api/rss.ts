@@ -32,7 +32,7 @@ export default async (req: NextApiRequest, res: NextApiResponse): Promise<void> 
 		const latestPostDate = getLatestDate(posts.map(post => new Date(post.date)))
 
 		const sitemapXML = getRssXML({
-			title: "Blog by Guilherme Mota",
+			title: "Blog by Tejaswa Gupta",
 			description: "A blog about technology.",
 			link: baseURL,
 			latestPostDate: latestPostDate.toUTCString(),

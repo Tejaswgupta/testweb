@@ -39,7 +39,7 @@ const BlogPostLayout: React.FC<BlogPostLayoutProps> = (props) => {
 		<BlogPostContainer>
 			<MetaTag
 				page={{
-					title: `${title} | Guilherme Mota`,
+					title: `${title} | Tejaswa Gupta`,
 					description,
 				}}
 				share={{

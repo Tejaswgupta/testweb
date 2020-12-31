@@ -25,7 +25,7 @@ export const getPostShareUrls = (
 ): GetPostShareUrls["Response"] => {
 	const blogUrl = appUrls.blog
 	const postUrl = `${blogUrl}/${props.slug}`
-	const defaultDescription = `Give a look at '${props.title}', written by Guilherme Mota`
+	const defaultDescription = `Give a look at '${props.title}', written by Tejaswa Gupta`
 
 	const url = getFixedEncodeURIComponent(postUrl)
 	const title = getFixedEncodeURIComponent(props.title)
