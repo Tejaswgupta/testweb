@@ -23,7 +23,7 @@ export default createGlobalStyle`
     --black-color-3: #D7D8DA;
     --black-color-4: #F3F3F3;
 
-		--purple-color: #5328FE;
+		--purple-color: #FF1133;
 		
 		--section-content-boxed-max-width: 1366px;
 		--section-content-fluid-max-width: 90%;
