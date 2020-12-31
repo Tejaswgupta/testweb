@@ -26,11 +26,9 @@ const Home: NextPage<HomeProps> = (props) => {
 			{/* <IntroductionSection /> */}
 			{/* <Header /> */}
 			<Banner />
-			<TimelineSection />
-			
+			{/* <TimelineSection /> */}			
 			<SkillsSection />
-
-			<QuotesSection />
+			{/* <QuotesSection /> */}
 
 			<ContactSection />
 		</HomeLayout>

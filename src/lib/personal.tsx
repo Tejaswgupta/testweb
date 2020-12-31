@@ -24,7 +24,7 @@ export const contactMap: ContactMap = {
 	},
 	mail: {
 		iconSrc: "/icons/mail.svg",
-		url: "mailto:contact@example.com",
+		url: "mailto:contact@tejaswagupta.me",
 		rawValue: "guptatejasw2002@gmail.com",
 		alt: "mail"
 	},

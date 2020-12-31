@@ -129,6 +129,7 @@ export default createGlobalStyle`
 		@media (min-width: 768px) {
 			&:hover {
 				color: var(--gray-color-15);
+		
 			}
 
 			&:before {

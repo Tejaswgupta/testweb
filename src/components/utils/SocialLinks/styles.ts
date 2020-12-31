@@ -3,6 +3,7 @@ import styled from "styled-components"
 export const Container = styled.div`
   & a:not(:last-child) {
     margin-right: 30px;
+    cursor: pointer;
   }
 `
 
@@ -13,6 +14,7 @@ export const SocialLink = styled.a`
 
   &:hover {
     opacity: 0.5;
+    cursor: pointer;
   }
 
   @media (min-width: ${props => props.theme.screens.medium}) {
