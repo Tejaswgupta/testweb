@@ -24,14 +24,14 @@ export const contactMap: ContactMap = {
 	},
 	mail: {
 		iconSrc: "/icons/mail.svg",
-		url: "https://mail.guilherr.me",
-		rawValue: "guilhermebromonschenkel@gmail.com",
+		url: "mailto:contact@example.com",
+		rawValue: "guptatejasw2002@gmail.com",
 		alt: "mail"
 	},
 	whatsapp: {
 		iconSrc: "/icons/whatsapp.svg",
 		url: "https://whatsapp.guilherr.me",
-		rawValue: "+55 (27) 99633-4936",
+		rawValue: "+91 (27) 99633-4936",
 		alt: "whatsapp"
 	}
 }

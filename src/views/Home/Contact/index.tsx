@@ -41,7 +41,7 @@ const ContactSection: React.FC = () => (
 					</ContactInfoLink>
 				</ContactInfoContent>
 				
-				<ContactInfoContent>
+				{/* <ContactInfoContent>
 					<Icon
 						src={contactMap.whatsapp.iconSrc}
 						alt={contactMap.whatsapp.alt}
@@ -54,7 +54,7 @@ const ContactSection: React.FC = () => (
 					>
 						{contactMap.whatsapp.rawValue}
 					</ContactInfoLink>
-				</ContactInfoContent>
+				</ContactInfoContent> */}
 			</ContactInfoContainer>
 		</ContactSectionContent>
 	</ContactSectionContainer>
