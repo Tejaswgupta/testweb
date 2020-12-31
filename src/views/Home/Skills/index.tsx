@@ -18,9 +18,9 @@ import { appUrls } from "@/lib/personal"
 import useResponsiveBreakpoints from "@/hooks/useResponsiveBreakpoints"
 
 const SKILLS = [
-	"Next.js", "React.js", "Typescript", "Node.js", "AWS", "Software Architecture", "Fast Learning",
-	"Excellence", "Fast Delivery", "Commitment", "Quality Minded", "Javascript", "Software Patterns",
-	"Solution Modelling"
+	"Kotlin", "Swift", "Dart" , "Flutter", "Firebase", "Cassandra", "Java", "Git", "CI/CD","Ethical Hacking", "Tensorflow","OpenCV",  
+	"Next.js", "React.js", "Typescript","Database management","Python","Javascript"
+
 ]
 
 const SkillsSection: React.FC = () => {
