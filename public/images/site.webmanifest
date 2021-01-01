@@ -1,6 +1,8 @@
 {
-    "name": "",
-    "short_name": "",
+	"short_name": "Tejaswa",
+	"name": "Tejaswa Gupta",
+	"description": "My Portfolio",
+	"orientation": "portrait",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
