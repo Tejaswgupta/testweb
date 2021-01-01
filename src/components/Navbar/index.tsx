@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
 					rel="noreferrer"
 				>
 					<Logo
-						src="/images/logo-white-transparent.png"
+						src="/images/new-logo.png" //Navbar icon 
 						alt="logo"
 						width="26px"
 						height="40px"

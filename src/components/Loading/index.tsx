@@ -27,7 +27,7 @@ const Loading: React.FC = () => {
 	return (
 		<LoadingContainer isLoaded={isLoaded}>
 			<Logo
-				src="/images/logo-white-transparent.png"
+				src="/images/new-logo.png"
 				alt="logo"
 			/>
 		</LoadingContainer>
