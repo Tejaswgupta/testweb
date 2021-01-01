@@ -1,24 +1,22 @@
-import React from "react"
+import React from "react";
 
-import {
-	BlogPostContainer
-} from "@/layouts/BlogPost/styles"
+import { BlogPostContainer } from "@/layouts/BlogPost/styles";
 
-import { MetaTag } from "@/components"
+import { MetaTag } from "@/components";
 
-import { buildImageSharePath } from "@/lib/image"
-import { appUrls } from "@/lib/personal"
+import { buildImageSharePath } from "@/lib/image";
+import { appUrls } from "@/lib/personal";
 
 type BlogPostLayoutProps = {
-	slug: string
-	title: string
-	description: string
-	coverSrc: string
-	date: string
-	readingTime: string
-	authorName: string
-	authorUrl: string
-}
+	slug: string;
+	title: string;
+	description: string;
+	coverSrc: string;
+	date: string;
+	readingTime: string;
+	authorName: string;
+	authorUrl: string;
+};
 
 const BlogPostLayout: React.FC<BlogPostLayoutProps> = (props) => {
 	const {
@@ -30,10 +28,10 @@ const BlogPostLayout: React.FC<BlogPostLayoutProps> = (props) => {
 		date,
 		readingTime,
 		authorName,
-		authorUrl
-	} = props
+		authorUrl,
+	} = props;
 
-	const imageSrc = buildImageSharePath(coverSrc)
+	const imageSrc = buildImageSharePath(coverSrc);
 
 	return (
 		<BlogPostContainer>
@@ -51,13 +49,13 @@ const BlogPostLayout: React.FC<BlogPostLayoutProps> = (props) => {
 					authorUrl,
 					type: "article",
 					publishDate: date,
-					readingTime
+					readingTime,
 				}}
 			/>
 
 			{children}
 		</BlogPostContainer>
-	)
-}
+	);
+};
 
-export default BlogPostLayout
+export default BlogPostLayout;

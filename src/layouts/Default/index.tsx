@@ -1,33 +1,51 @@
-import React from "react"
-import Head from "next/head"
-import GoogleFonts from "next-google-fonts"
+import React from "react";
+import Head from "next/head";
+import GoogleFonts from "next-google-fonts";
 
-import {
-	Navbar
-} from "@/components"
+import { Navbar } from "@/components";
 
-import { buildCDNUrl } from "@/lib/cdn"
+import { buildCDNUrl } from "@/lib/cdn";
 
 const DefaultLayout: React.FC = (props) => {
-	const { children } = props
+	const { children } = props;
 
 	return (
 		<>
 			<GoogleFonts href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" />
-			<GoogleFonts href="https://fonts.googleapis.com/css?family=Montserrat:400,700"/>
+			<GoogleFonts href="https://fonts.googleapis.com/css?family=Montserrat:400,700" />
 
 			<Head>
-				<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+				<link
+					rel="icon"
+					type="image/png"
+					sizes="32x32"
+					href="images/favicon-32x32.png"
+				/>
+				<link
+					rel="icon"
+					type="image/png"
+					sizes="16x16"
+					href="images/favicon-16x16.png"
+				/>
+				<link
+					rel="apple-touch-icon"
+					sizes="180x180"
+					href="images/apple-touch-icon.png"
+				/>
+				<link rel="manifest" href="images/site.webmanifest" />
+				<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5" />
+				<meta name="theme-color" content="#ffffff" />
+				{/* <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 				<link rel="icon" href={buildCDNUrl("/favicon.png")} />
 				<link id="app-manifest" rel="manifest" href="/manifest.json"></link>
-				<script defer type="text/javascript" src="https://static.guilherr.me/js/gtm.js"></script>
+				<script defer type="text/javascript" src="https://static.guilherr.me/js/gtm.js"></script> */}
 			</Head>
 
 			<Navbar />
 
 			{children}
 		</>
-	)
-}
+	);
+};
 
-export default DefaultLayout
+export default DefaultLayout;
