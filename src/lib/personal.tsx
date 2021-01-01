@@ -19,7 +19,7 @@ export const contactMap: ContactMap = {
 	},
 	linkedin: {
 		iconSrc: "/icons/linkedin.svg",
-		url: "https://linkedin.guilherr.me",
+		url: "",
 		alt: "linkedin"
 	},
 	mail: {
@@ -30,7 +30,7 @@ export const contactMap: ContactMap = {
 	},
 	whatsapp: {
 		iconSrc: "/icons/whatsapp.svg",
-		url: "https://whatsapp.guilherr.me",
+		url: "https://tejaswagupta.me",
 		rawValue: "+91 (27) 99633-4936",
 		alt: "whatsapp"
 	}
@@ -146,9 +146,9 @@ export const timeline: Timeline[] = [
 
 export const appUrls = {
 	home: "https://github.com/tejaswgupta",
-	blog: "https://blog.guilherr.me",
-	about: "https://about.guilherr.me",
-	skills: "https://about.guilherr.me/skills"
+	blog: "https://tejaswagupta.me",
+	about: "https://tejaswagupta.me",
+	skills: "https://tejaswagupta.me/skills"
 }
 
 export const authors = {

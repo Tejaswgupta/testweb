@@ -24,8 +24,7 @@ const Banner: React.FC = () => {
 					800
 					// 'I am an Android developer',
 					// 200
-					// 'E amo ☕',
-					// 1500
+					
 				]}
 				loop={Infinity}
 				wrapper="p"
