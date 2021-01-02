@@ -43,4 +43,5 @@ Home.getInitialProps = (ctx) => {
 	}
 }
 
+
 export default Home
