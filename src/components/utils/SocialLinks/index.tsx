@@ -1,11 +1,8 @@
+import { Icon } from "@/components"
 import React from "react"
 import {
-	FaLinkedin,
-	FaFacebook,
-	FaInstagram,
 	FaGithub,
 	FaWhatsapp,
-	FaMailBulk,
 	FaWind
 } from "react-icons/fa"
 
@@ -19,21 +16,25 @@ const SocialLinks: React.FC<SocialProps> = ({ isBanner = true }) => {
 	return (
 		<Container>
 			<SocialLink href="https://github.com/tejaswgupta" target="_blank">
-				<FaGithub />
+				<Icon
+					src="/icons/github.svg">
+				</Icon>
 			</SocialLink>
 
-			<SocialLink
-				// href="https://www.instagram.com/tejasw__gupta/"
-				// target="_blank"
-			>
-				<FaWind />
+			<SocialLink>
+				<Icon
+					src="/icons/quote.svg"
+					alt="mail">
+				</Icon>
 			</SocialLink>
 
 			<SocialLink
 				href="mailto:contact@tejaswagupta.me"
-				target="_blank"
-			>
-				<FaMailBulk />
+				target="_blank">
+				<Icon
+					src="/icons/mail.svg"
+					alt="mail">
+				</Icon>
 			</SocialLink>
       
 			{!isBanner && (
