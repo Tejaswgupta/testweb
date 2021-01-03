@@ -7,6 +7,7 @@ import DefaultLayout from "@/layouts/Default"
 
 import GlobalStyles from "@/styles/Global"
 import theme from "../styles/theme"
+import withDarkMode from "next-dark-mode"
 
 const App: NextPage<AppProps> = ({ Component, pageProps }) => {
 	return (
@@ -29,4 +30,4 @@ export const reportWebVitals = (metric: NextWebVitalsMetric): void  => {
 	] as NextWebVitalsMetric[]
 }
 
-export default App
+export default App;

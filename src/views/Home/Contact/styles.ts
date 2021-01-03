@@ -14,6 +14,7 @@ export const ContactSectionContent = styled(Section.Content)``
 
 export const ContactInfoContainer = styled.div`
 	margin: var(--section-content-items-margin);
+	
 
 	display: flex;
 	flex-direction: column;
@@ -23,11 +24,12 @@ export const ContactInfoContainer = styled.div`
 export const ContactInfoContent = styled.div`
 	display: flex;
 	align-items: center;
+	
 
 	a {
 		margin-left: 1rem;
 	}
-
+	
 	margin-bottom: 1rem;
 `
 

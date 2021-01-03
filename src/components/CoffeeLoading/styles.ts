@@ -8,7 +8,7 @@ interface LoadProps {
 export const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  background-color: #111;
+  background-color : var(--gray-color-1);
   position: absolute;
   z-index: ${(props: LoadProps) => (props.showLoad ? "100" : "-20")};
   opacity: ${(props: LoadProps) => (props.showLoad ? "1" : "0")};

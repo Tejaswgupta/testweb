@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-  background: #000;
+  background: var(--gray-color-1);
   width: 100%;
   height: 100vh;
   display: flex;
@@ -15,7 +15,7 @@ export const Container = styled.div`
   p {
     font-size: 32px;
     margin-bottom: 20px;
-    color: #fff;
+    color: var(--gray-color-15);
     font-family: Montserrat, serif;
     font-weight: 700;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
@@ -29,7 +29,7 @@ export const Container = styled.div`
 `
 
 export const KeepGoingButton = styled.a`
-  color: #fff;
+  color: var(--gray-color-15);
   font-size: 24px;
   height: 120px;
   display: flex;
