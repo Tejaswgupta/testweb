@@ -31,7 +31,7 @@ export const contactMap: ContactMap = {
 	whatsapp: {
 		iconSrc: "/icons/whatsapp.svg",
 		url: "https://tejaswagupta.me",
-		rawValue: "+91 (27) 99633-4936",
+		rawValue: "+919935631169",
 		alt: "whatsapp"
 	}
 }
@@ -145,9 +145,9 @@ export const timeline: Timeline[] = [
 ]
 
 export const appUrls = {
-	home: "https://github.com/tejaswgupta",
-	blog: "https://tejaswagupta.me",
-	about: "https://tejaswagupta.me",
+	home: "https://tejaswgupta.me/",
+	blog: "https://tejaswagupta.me/",
+	about: "https://tejaswagupta.me/",
 	skills: "https://tejaswagupta.me/skills"
 }
 

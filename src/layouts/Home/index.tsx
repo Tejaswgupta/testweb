@@ -20,7 +20,7 @@ const HomeLayout: React.FC<HomeLayoutProps> = (props) => {
 	const { children, isMobile } = props
 
 	const title = "Tejaswa Gupta"
-	const description = "All info about Tejaswa Gupta."
+	const description = "My portfolio"
 
 	return (
 		<HomeContainer>
@@ -32,7 +32,7 @@ const HomeLayout: React.FC<HomeLayoutProps> = (props) => {
 				share={{
 					title,
 					description,
-					imageSrc: buildCDNUrl("/favicon.png"),
+					imageSrc: buildCDNUrl("images/new-logo.png"),
 					url: appUrls.home,
 					type: "website"
 				}}

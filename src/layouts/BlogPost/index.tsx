@@ -50,10 +50,10 @@ const BlogPostLayout: React.FC<BlogPostLayoutProps> = (props) => {
 					type: "article",
 					publishDate: date,
 					readingTime,
-				}}
-			/>
+				}} />
 
 			{children}
+
 		</BlogPostContainer>
 	);
 };

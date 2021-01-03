@@ -31,7 +31,6 @@ const Home: NextPage<HomeProps> = (props) => {
 			{/* <TimelineSection /> */}			
 			<SkillsSection />
 			{/* <QuotesSection /> */}
-
 			<ContactSection />
 		</HomeLayout>
 	)
