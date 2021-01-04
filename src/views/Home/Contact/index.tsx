@@ -19,7 +19,7 @@ const ContactSection: React.FC = () => (
 	<ContactSectionContainer>
 		<ContactSectionContent>
 			<Summary
-				spotlightWidth="230px"
+				spotlightWidth="220px"
 				type="Contact"
 				title="Contact."
 				description="Feel free to reach out if you're looking for a developer, have a question, or just want to connect."
@@ -29,14 +29,13 @@ const ContactSection: React.FC = () => (
 				<ContactInfoContent>
 					<Icon
 						src={contactMap.mail.iconSrc}
-						alt={contactMap.mail.alt}
-					/>
+						alt={contactMap.mail.alt}/>
 
 					<ContactInfoLink
 						href={contactMap.mail.url}
 						target="_blank"
-						rel="noopener"
-					>
+						rel="noopener">
+
 						{contactMap.mail.rawValue}
 					</ContactInfoLink>
 				</ContactInfoContent>
@@ -52,7 +51,7 @@ const ContactSection: React.FC = () => (
 						target="_blank"
 						rel="noopener"
 					>
-						{contactMap.whatsapp.rawValue}
+						{contactMap.whatsapp.rawValue}f
 					</ContactInfoLink>
 				</ContactInfoContent> */}
 			</ContactInfoContainer>
