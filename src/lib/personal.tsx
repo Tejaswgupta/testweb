@@ -146,9 +146,9 @@ export const timeline: Timeline[] = [
 
 export const appUrls = {
 	home: "https://tejaswagupta.me/",
-	blog: "https://tejaswagupta.me/",
+	blog: "https://tejaswagupta.me/blog",
 	about: "https://tejaswagupta.me/",
-	skills: "https://tejaswagupta.me/skills"
+	skills: "https://skills.tejaswagupta.me/"
 }
 
 export const authors = {

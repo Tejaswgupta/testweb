@@ -38,7 +38,7 @@ export const PostTag = styled.h4`
 
 	padding: 0.5rem 1.5rem;
 
-	background-color: var(--purple-color);
+	background-color: var(--gray-color-2);
 
 	border-radius: 1rem;
 

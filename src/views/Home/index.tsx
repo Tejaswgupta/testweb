@@ -13,8 +13,6 @@ const QuotesSection = dynamic(() => import("@/views/Home/Quotes"));
 
 import { isMobileRequest } from "@/lib/validation";
 import CoffeeLoading from "@/components/CoffeeLoading";
-import Leon from "@/components/Leon/Leon";
-import { useIntroContext } from "@/components/Leon/context/IntroContext";
 
 type HomeProps = {
 	isMobile: boolean;
@@ -22,7 +20,6 @@ type HomeProps = {
 
 const Home: NextPage<HomeProps> = (props) => {
 	const { isMobile } = props;
-	const { renderIntro, disableIntro } = useIntroContext();
 
 	return (
 		<HomeLayout isMobile={isMobile}>

@@ -42,7 +42,7 @@ export const PostItemContainer = styled.article`
 export const PostItemContent = styled.a<{ postsCount: number }>`
 	display: flex;
 	flex-direction: ${(props) => `${props.postsCount === 1 ? "row" : "column"}`};
-	opacity: 0.9;
+	opacity: 0.8;
 	padding-right: 0;
 
 	transition: all 0.25s ease;
@@ -71,7 +71,7 @@ export const PostItemContent = styled.a<{ postsCount: number }>`
 `
 
 export const PostCover = styled(LazyLoadedImage)`
-	width: 100%;
+	width: 50%;
 	height: 300px;
 	background-color: var(--gray-color-2);
 	border-radius: 1rem;

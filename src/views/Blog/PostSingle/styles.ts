@@ -45,6 +45,8 @@ export const PostContent = styled.div`
 	margin-top: 10rem;
 
 	& > * {
-		color: var(--gray-color-15);
+		color: var(--gray-color-1);
 	}
+
+
 `

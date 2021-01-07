@@ -6,22 +6,19 @@ import { ThemeProvider } from "styled-components"
 import DefaultLayout from "@/layouts/Default"
 
 import GlobalStyles from "@/styles/Global"
-import theme from "../styles/theme"
-import withDarkMode from "next-dark-mode"
-import { IntroProvider } from "@/components/Leon/context/IntroContext"
-import { AnimatePresence } from "framer-motion"
+import theme , {lightTheme} from "../styles/theme"
 
 const App: NextPage<AppProps> = ({ Component, pageProps }) => {
 	return (
-		<ThemeProvider theme={theme}>
+		<ThemeProvider theme={lightTheme}>
 
 			<DefaultLayout>
 				<GlobalStyles />
-				<IntroProvider>
-					<AnimatePresence exitBeforeEnter>
-						<Component {...pageProps}  />
-					</AnimatePresence>
-				</IntroProvider>
+	
+	
+				<Component {...pageProps}  />
+	
+
 				
 			</DefaultLayout>
 		</ThemeProvider>

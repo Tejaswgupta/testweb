@@ -97,7 +97,7 @@ const Navbar: React.FC = () => {
 							href={appUrls.blog}
 							target="_self"
 							rel="noreferrer">
-							Blog
+							Projects
 						</MenuItemLink>
 
 					</MenuItem>
