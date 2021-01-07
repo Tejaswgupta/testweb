@@ -44,7 +44,7 @@ const BlogPostLayout: React.FC<BlogPostLayoutProps> = (props) => {
 					title,
 					description,
 					imageSrc,
-					url: `${appUrls.blog}/${slug}`,
+					url: `${appUrls.projects}/${slug}`,
 					authorName,
 					authorUrl,
 					type: "article",

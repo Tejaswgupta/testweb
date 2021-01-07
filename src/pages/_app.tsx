@@ -14,12 +14,9 @@ const App: NextPage<AppProps> = ({ Component, pageProps }) => {
 
 			<DefaultLayout>
 				<GlobalStyles />
-	
-	
-				<Component {...pageProps}  />
-	
 
-				
+				<Component {...pageProps}  />
+
 			</DefaultLayout>
 		</ThemeProvider>
 		
