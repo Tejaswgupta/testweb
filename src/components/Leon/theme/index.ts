@@ -1,6 +1,6 @@
 import styled, { CreateStyled } from "@emotion/styled"
 
-import { ThemeVariants } from "./types"
+import { ThemeVariants } from "../styled/types"
 import breakpoints from "./breakpoints"
 import { colorsDark, colorsLight } from "./colors"
 import radii from "./radii"

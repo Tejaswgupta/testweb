@@ -23,13 +23,13 @@ type GetPostShareUrls = {
 export const getPostShareUrls = (
 	props: GetPostShareUrls["Props"]
 ): GetPostShareUrls["Response"] => {
-	const blogUrl = appUrls.blog
-	const postUrl = `${blogUrl}/${props.slug}`
+	const projectsUrl = appUrls.projects
+	const postUrl = `${projectsUrl}/${props.slug}`
 	const defaultDescription = `Give a look at '${props.title}', written by Tejaswa Gupta`
 
 	const url = getFixedEncodeURIComponent(postUrl)
 	const title = getFixedEncodeURIComponent(props.title)
-	const source = getFixedEncodeURIComponent(blogUrl)
+	const source = getFixedEncodeURIComponent(projectsUrl)
 	const smallDescription = getFixedEncodeURIComponent(`${defaultDescription}!`)
 	const fullDescription = getFixedEncodeURIComponent(`${defaultDescription} at ${url}!`)
 
