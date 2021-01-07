@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Globe = styled.canvas`
-	
+
 `
 
 export const TagList = styled.ul`

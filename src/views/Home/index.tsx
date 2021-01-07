@@ -1,48 +1,50 @@
-import React from "react"
-import { NextPage } from "next"
-import dynamic from "next/dynamic"
+import React from "react";
+import { NextPage } from "next";
+import dynamic from "next/dynamic";
 
-import HomeLayout from "@/layouts/Home"
-import Banner from "../../components/Banner"
-import Header from "../../components/Header"
+import HomeLayout from "@/layouts/Home";
+import Banner from "../../components/Banner";
 
-import IntroductionSection from "@/views/Home/Introduction"
-const TimelineSection =  dynamic(() => import("@/views/Home/Timeline"))
-const SkillsSection =  dynamic(() => import("@/views/Home/Skills"))
-const ContactSection =  dynamic(() => import("@/views/Home/Contact"))
-const QuotesSection =  dynamic(() => import("@/views/Home/Quotes"))
+import IntroductionSection from "@/views/Home/Introduction";
+const TimelineSection = dynamic(() => import("@/views/Home/Timeline"));
+const SkillsSection = dynamic(() => import("@/views/Home/Skills"));
+const ContactSection = dynamic(() => import("@/views/Home/Contact"));
+const QuotesSection = dynamic(() => import("@/views/Home/Quotes"));
 
-import { isMobileRequest } from "@/lib/validation"
-import CoffeeLoading from "@/components/CoffeeLoading"
+import { isMobileRequest } from "@/lib/validation";
+import CoffeeLoading from "@/components/CoffeeLoading";
+import Leon from "@/components/Leon/Leon";
+import { useIntroContext } from "@/components/Leon/context/IntroContext";
 
 type HomeProps = {
-	isMobile: boolean
-}
+	isMobile: boolean;
+};
 
 const Home: NextPage<HomeProps> = (props) => {
-	const { isMobile } = props
+	const { isMobile } = props;
+	const { renderIntro, disableIntro } = useIntroContext();
 
 	return (
 		<HomeLayout isMobile={isMobile}>
 			{/* <IntroductionSection /> */}
 			{/* <Header /> */}
-			<CoffeeLoading/>
+			<CoffeeLoading />
+			{/* <Leon onComplete={useIntroContext} color={"black"}/> */}
 			<Banner />
-			{/* <TimelineSection /> */}			
+			{/* <TimelineSection /> */}
 			<SkillsSection />
 			{/* <QuotesSection /> */}
 			<ContactSection />
 		</HomeLayout>
-	)
-}
+	);
+};
 
 Home.getInitialProps = (ctx) => {
-	const isMobile = isMobileRequest(ctx)
+	const isMobile = isMobileRequest(ctx);
 
 	return {
-		isMobile: !!isMobile
-	}
-}
+		isMobile: !!isMobile,
+	};
+};
 
-
-export default Home
+export default Home;

@@ -8,6 +8,8 @@ import DefaultLayout from "@/layouts/Default"
 import GlobalStyles from "@/styles/Global"
 import theme from "../styles/theme"
 import withDarkMode from "next-dark-mode"
+import { IntroProvider } from "@/components/Leon/context/IntroContext"
+import { AnimatePresence } from "framer-motion"
 
 const App: NextPage<AppProps> = ({ Component, pageProps }) => {
 	return (
@@ -15,8 +17,12 @@ const App: NextPage<AppProps> = ({ Component, pageProps }) => {
 
 			<DefaultLayout>
 				<GlobalStyles />
-
-				<Component {...pageProps} />
+				<IntroProvider>
+					<AnimatePresence exitBeforeEnter>
+						<Component {...pageProps}  />
+					</AnimatePresence>
+				</IntroProvider>
+				
 			</DefaultLayout>
 		</ThemeProvider>
 		

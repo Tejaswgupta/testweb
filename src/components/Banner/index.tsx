@@ -11,9 +11,9 @@ const Banner: React.FC = () => {
 			<Typical
 				steps={[
 					"Hey there",
-					2000,
+					1800,
 					"I am Tejaswa Gupta",
-					1500,
+					1800,
 					// 'I develop',
 					// 100,
 					"I develop iOS apps",
@@ -21,7 +21,8 @@ const Banner: React.FC = () => {
 					"I develop Android apps",
 					800,
 					"I develop Web apps",
-					800
+					800,
+					"I develop Machine learning algorithms"
 					// 'I am an Android developer',
 					// 200
 					
