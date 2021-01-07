@@ -34,4 +34,4 @@ const themes: { [key in ThemeVariants]: Theme } = {
 export const themeSelect = (mode: ThemeVariants) =>
 	(themes[mode] || themeDark) as Theme
 
-export default styled as CreateStyled<Theme>
+export default styled 
