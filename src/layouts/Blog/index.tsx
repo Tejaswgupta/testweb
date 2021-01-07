@@ -26,7 +26,7 @@ const BlogLayout: React.FC = (props) => {
 					title,
 					description,
 					imageSrc: buildCDNUrl("/favicon.png"),
-					url: appUrls.blog,
+					url: appUrls.projects,
 					type: "website"
 				}}
 			/>
