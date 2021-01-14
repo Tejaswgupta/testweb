@@ -37,14 +37,14 @@ const SocialLinks: React.FC<SocialProps> = ({ isBanner = true }) => {
 				</Icon>
 			</SocialLink>
       
-			{!isBanner && (
+			{/* {!isBanner && (
 				<SocialLink
-					href="https://api.whatsapp.com/send?phone=+919935631169&text=Daniel!%20Vi%20seu%20portf%C3%B3lio...%20vamos%20tomar%20um%20caf%C3%A9%3F"
+					href="https://api.whatsapp.com/send?phone=+919935631169&text=Hey!%20Vi%20seu%20portf%C3%B3lio...%20vamos%20tomar%20um%20caf%C3%A9%3F"
 					target="_blank"
 				>
 					<FaWhatsapp />
 				</SocialLink>
-			)}
+			)} */}
 		</Container>
 	)
 }
