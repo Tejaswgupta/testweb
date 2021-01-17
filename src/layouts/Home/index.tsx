@@ -32,7 +32,7 @@ const HomeLayout: React.FC<HomeLayoutProps> = (props) => {
 				share={{
 					title,
 					description,
-					imageSrc: buildCDNUrl("images/new-logo.png"),
+					imageSrc: buildCDNUrl("images/new-logo.webp"),
 					url: appUrls.home,
 					type: "website"
 				}}

@@ -1,7 +1,7 @@
 {
-	"short_name": "Tejaswa",
-	"name": "Tejaswa Gupta",
-	"description": "My Portfolio",
+	"short_name": "Portoflio PWA",
+	"name": "Tejaswa Gupta's Portoflio",
+	"description": "Tejaswa Gupta's Portfolio",
 	"orientation": "portrait",
     "icons": [
         {
@@ -15,7 +15,8 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
-    "display": "standalone"
+	"start_url": "/",
+	"background_color": "#FFFFFF",
+	"display": "standalone",
+	"theme_color": "#000000"
 }

@@ -35,8 +35,10 @@ const DefaultLayout: React.FC = (props) => {
 				<link rel="manifest" href="images/site.webmanifest" />
 				<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5" />
 				<meta name="theme-color" content="#ffffff" />
-				{/* <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-				<link rel="icon" href={buildCDNUrl("/favicon.png")} />
+				<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+				<link rel="icon" href={buildCDNUrl("images/new-logo.webp")} />
+				{/* 
+				
 				<link id="app-manifest" rel="manifest" href="/manifest.json"></link>
 				<script defer type="text/javascript" src="https://static.guilherr.me/js/gtm.js"></script> */}
 			</Head>

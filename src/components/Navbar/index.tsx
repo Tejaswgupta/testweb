@@ -51,16 +51,16 @@ const Navbar: React.FC = () => {
 					target="_self"
 					rel="noreferrer"
 				>
-					{/* <Logo
+					<Logo
 						src="/images/new-logo.png" //Navbar icon 
 						alt="logo"
 						width="26px"
 						height="40px"
-					/> */}
-					{/* <IconButton
+					/>
+					<IconButton
 						src="/icons/menu.svg"
 						alt="mail">
-					</IconButton> */}
+					</IconButton>
 				</LogoLink>
 
 				<Menu
