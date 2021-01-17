@@ -20,7 +20,7 @@ const HomeLayout: React.FC<HomeLayoutProps> = (props) => {
 	const { children, isMobile } = props
 
 	const title = "Tejaswa Gupta"
-	const description = "My portfolio"
+	const description = "Tejaswa Gupta's Portfolio"
 
 	return (
 		<HomeContainer>

@@ -55,7 +55,6 @@
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.1.2",
     "eslint-plugin-standard": "^4.1.0",
-    "git-commit-msg-linter": "^3.0.0",
     "gray-matter": "^4.0.2",
     "next-compose-plugins": "^2.2.1",
     "next-pwa": "^3.1.5",

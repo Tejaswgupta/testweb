@@ -1,12 +1,15 @@
-import { Icon, IconButton } from "@/components"
-import { contactMap } from "@/lib/personal"
-import { AuxBarContainer, AuxBarContent } from "@/views/Home/Introduction/styles"
+import { Icon } from "@/components"
+import { Image } from "@/components/LazyLoadedImage/styles"
 import React from "react"
 import {
+	FaInstagram,
 	FaGithub,
 	FaWhatsapp,
-	FaWind
+	FaVoicemail,
+	FaMailBulk
 } from "react-icons/fa"
+
+import {BiMailSend} from "react-icons/bi"
 
 import { Container, SocialLink } from "./styles"
 
@@ -17,105 +20,27 @@ interface SocialProps {
 const SocialLinks: React.FC<SocialProps> = ({ isBanner = true }) => {
 	return (
 		<Container>
-			{/* <SocialLink href="https://github.com/tejaswgupta" target="_blank">
-				<Icon
-					src="/icons/github.svg">
-				</Icon>
+			<SocialLink href="https://github.com/tejaswgupta" target="_blank">
+				<FaGithub />
 			</SocialLink>
 
-			<SocialLink>
-				<Icon
-					src="/icons/quote.svg"
-					alt="mail">
-				</Icon>
+			<SocialLink href="https://instagram.com/tejasw__gupta" target="_blank">
+				<FaInstagram />
 			</SocialLink>
+
+			{/* <SocialLink href={contactMap.mail} target="_blank">
+        <Icon src={contactMap.mail.iconSrc} alt={contactMap.mail.alt} />
+      </SocialLink> */}
 
 			<SocialLink
-				href="mailto:contact@tejaswagupta.me"
-				target="_blank">
-				<Icon
-					src="/icons/mail.svg"
-					alt="mail">
-				</Icon>
+				href="https://api.whatsapp.com/send?phone=+919935631169&text=Daniel!%20Vi%20seu%20portf%C3%B3lio...%20vamos%20tomar%20um%20caf%C3%A9%3F"
+				target="_blank"
+			>
+				<BiMailSend />
 			</SocialLink>
- */}
 
-
-
-			<IconButton
-				href="https://github.com/tejaswgupta" target="_blank"
-				src="/icons/github.svg"/>
-
-
-
-			<IconButton
-				href="https://github.com/tejaswgupta" target="_blank"
-				src="/icons/quote.svg"/>
-
-
-			<IconButton
-				href="mailto:contact@tejaswagupta.me"target="_blank"
-				src="/icons/mail.svg"/>
-
-
-
-
-    
+		
 		</Container>
-		
-	// <AuxBarContainer>
-	// 	<AuxBarContent>
-	// 		<SocialLink href="https://github.com/tejaswgupta" target="_blank">
-	// 			<Icon
-	// 				src="/icons/github.svg">
-	// 			</Icon>
-	// 		</SocialLink>
-
-	// 		<SocialLink>
-	// 			<Icon
-	// 				src="/icons/quote.svg"
-	// 				alt="mail">
-	// 			</Icon>
-	// 		</SocialLink>
-
-	// 		<SocialLink
-	// 			href="mailto:contact@tejaswagupta.me"
-	// 			target="_blank">
-	// 			<Icon
-	// 				src="/icons/mail.svg"
-	// 				alt="mail">
-	// 			</Icon>
-	// 		</SocialLink>
-	// 	</AuxBarContent>
-	// </AuxBarContainer>
-		
-	
-	// <IconButton
-	// 	src={contactMap.whatsapp.iconSrc}
-	// 	href={contactMap.whatsapp.url}
-	// 	alt={contactMap.whatsapp.alt}
-	// />
-
-	// <IconButton
-	// 	src={contactMap.linkedin.iconSrc}
-	// 	href={contactMap.linkedin.url}
-	// 	alt={contactMap.linkedin.alt}
-	// />
-
-	// <IconButton
-	// 	src={contactMap.mail.iconSrc}
-	// 	href={contactMap.mail.url}
-	// 	alt={contactMap.mail.alt}
-	// />
-
-	// <IconButton
-	// 	src={contactMap.github.iconSrc}
-	// 	href={contactMap.github.url}
-	// 	alt={contactMap.github.alt}
-	// />
-	
-
-
 	)
 }
 
