@@ -16,56 +16,78 @@ interface SocialProps {
 
 const SocialLinks: React.FC<SocialProps> = ({ isBanner = true }) => {
 	return (
-	// <Container>
-	// 	<SocialLink href="https://github.com/tejaswgupta" target="_blank">
-	// 		<Icon
-	// 			src="/icons/github.svg">
-	// 		</Icon>
-	// 	</SocialLink>
+		<Container>
+			{/* <SocialLink href="https://github.com/tejaswgupta" target="_blank">
+				<Icon
+					src="/icons/github.svg">
+				</Icon>
+			</SocialLink>
 
-	// 	<SocialLink>
-	// 		<Icon
-	// 			src="/icons/quote.svg"
-	// 			alt="mail">
-	// 		</Icon>
-	// 	</SocialLink>
+			<SocialLink>
+				<Icon
+					src="/icons/quote.svg"
+					alt="mail">
+				</Icon>
+			</SocialLink>
 
-	// 	<SocialLink
-	// 		href="mailto:contact@tejaswagupta.me"
-	// 		target="_blank">
-	// 		<Icon
-	// 			src="/icons/mail.svg"
-	// 			alt="mail">
-	// 		</Icon>
-	// 	</SocialLink>
+			<SocialLink
+				href="mailto:contact@tejaswagupta.me"
+				target="_blank">
+				<Icon
+					src="/icons/mail.svg"
+					alt="mail">
+				</Icon>
+			</SocialLink>
+ */}
+
+
+
+			<IconButton
+				href="https://github.com/tejaswgupta" target="_blank"
+				src="/icons/github.svg"/>
+
+
+
+			<IconButton
+				href="https://github.com/tejaswgupta" target="_blank"
+				src="/icons/quote.svg"/>
+
+
+			<IconButton
+				href="mailto:contact@tejaswagupta.me"target="_blank"
+				src="/icons/mail.svg"/>
+
+
+
+
     
-	// </Container>
+		</Container>
 		
-		<AuxBarContainer>
-			<AuxBarContent>
-				<SocialLink href="https://github.com/tejaswgupta" target="_blank">
-					<Icon
-						src="/icons/github.svg">
-					</Icon>
-				</SocialLink>
+	// <AuxBarContainer>
+	// 	<AuxBarContent>
+	// 		<SocialLink href="https://github.com/tejaswgupta" target="_blank">
+	// 			<Icon
+	// 				src="/icons/github.svg">
+	// 			</Icon>
+	// 		</SocialLink>
 
-				<SocialLink>
-					<Icon
-						src="/icons/quote.svg"
-						alt="mail">
-					</Icon>
-				</SocialLink>
+	// 		<SocialLink>
+	// 			<Icon
+	// 				src="/icons/quote.svg"
+	// 				alt="mail">
+	// 			</Icon>
+	// 		</SocialLink>
 
-				<SocialLink
-					href="mailto:contact@tejaswagupta.me"
-					target="_blank">
-					<Icon
-						src="/icons/mail.svg"
-						alt="mail">
-					</Icon>
-				</SocialLink>
-			</AuxBarContent>
-		</AuxBarContainer>
+	// 		<SocialLink
+	// 			href="mailto:contact@tejaswagupta.me"
+	// 			target="_blank">
+	// 			<Icon
+	// 				src="/icons/mail.svg"
+	// 				alt="mail">
+	// 			</Icon>
+	// 		</SocialLink>
+	// 	</AuxBarContent>
+	// </AuxBarContainer>
 		
 	
 	// <IconButton
