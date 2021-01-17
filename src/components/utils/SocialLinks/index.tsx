@@ -1,4 +1,6 @@
-import { Icon } from "@/components"
+import { Icon, IconButton } from "@/components"
+import { contactMap } from "@/lib/personal"
+import { AuxBarContainer, AuxBarContent } from "@/views/Home/Introduction/styles"
 import React from "react"
 import {
 	FaGithub,
@@ -36,16 +38,62 @@ const SocialLinks: React.FC<SocialProps> = ({ isBanner = true }) => {
 					alt="mail">
 				</Icon>
 			</SocialLink>
-      
-			{/* {!isBanner && (
-				<SocialLink
-					href="https://api.whatsapp.com/send?phone=+919935631169&text=Hey!%20Vi%20seu%20portf%C3%B3lio...%20vamos%20tomar%20um%20caf%C3%A9%3F"
-					target="_blank"
-				>
-					<FaWhatsapp />
-				</SocialLink>
-			)} */}
+    
 		</Container>
+		
+	// <AuxBarContainer>
+	// 	<AuxBarContent>
+	// 		<SocialLink href="https://github.com/tejaswgupta" target="_blank">
+	// 			<Icon
+	// 				src="/icons/github.svg">
+	// 			</Icon>
+	// 		</SocialLink>
+
+	// 		<SocialLink>
+	// 			<Icon
+	// 				src="/icons/quote.svg"
+	// 				alt="mail">
+	// 			</Icon>
+	// 		</SocialLink>
+
+	// 		<SocialLink
+	// 			href="mailto:contact@tejaswagupta.me"
+	// 			target="_blank">
+	// 			<Icon
+	// 				src="/icons/mail.svg"
+	// 				alt="mail">
+	// 			</Icon>
+	// 		</SocialLink>
+	// 	</AuxBarContent>
+	// </AuxBarContainer>
+		
+	
+	// <IconButton
+	// 	src={contactMap.whatsapp.iconSrc}
+	// 	href={contactMap.whatsapp.url}
+	// 	alt={contactMap.whatsapp.alt}
+	// />
+
+	// <IconButton
+	// 	src={contactMap.linkedin.iconSrc}
+	// 	href={contactMap.linkedin.url}
+	// 	alt={contactMap.linkedin.alt}
+	// />
+
+	// <IconButton
+	// 	src={contactMap.mail.iconSrc}
+	// 	href={contactMap.mail.url}
+	// 	alt={contactMap.mail.alt}
+	// />
+
+	// <IconButton
+	// 	src={contactMap.github.iconSrc}
+	// 	href={contactMap.github.url}
+	// 	alt={contactMap.github.alt}
+	// />
+	
+
+
 	)
 }
 

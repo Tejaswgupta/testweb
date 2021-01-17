@@ -5,6 +5,8 @@ export const Container = styled.div`
     margin-right: 30px;
     cursor: pointer;
   }
+
+  z-index: 2;
 `
 
 export const SocialLink = styled.a`
