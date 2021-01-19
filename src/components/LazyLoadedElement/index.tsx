@@ -35,24 +35,20 @@ const LazyLoadedElement: React.FC<LazyLoadedElementProps> = (props) => {
 
 	const { addToCallbackPool } = useCallbackPool()
 
-	useDidMount(async () => {
+	useDidMount(() => {
 		const containerElement = containerRef.current as Element
 		const childrenElement = childrenRef.current as Element
 
-		const visibilityWorker = () => {
-			onVisible?.(containerElement, childrenElement)
-
-			setVisible(true)
-		}
-
-		const { isSafari } = await getClientDeviceInfo()
+		const { isIOS } = getClientDeviceInfo()
 
 		/**
 		 * In case the current browser is Safari, we avoid using lazy loading with
 		 * IntersectionObserver, since it causes a bug of no render.
 		 */
-		if (isSafari) {
-			visibilityWorker()
+		if (isIOS) {
+			onVisible?.(containerElement, childrenElement)
+
+			setVisible(true)
 		} else {
 			const observer = new IntersectionObserver(callback => {
 				const isContainerVisible = callback?.[0]?.isIntersecting
