@@ -117,7 +117,7 @@ export const WorkItemImage = styled(LazyLoadedImage)`
     height:100%;
     width:100%;
 
-		object-fit: fit;
+		object-fit: fill;
 		object-position: center;
     margin-left: 25px;
 

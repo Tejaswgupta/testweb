@@ -13,7 +13,7 @@ const Banner = dynamic(()=> import("../../components/Banner")) ;
 const CoffeeLoading = dynamic(() => import("@/components/CoffeeLoading"));
 const PortfolioSection = dynamic(() => import("./ProjectsSection/PortfolioSection/index"));
 
-import { isMobileRequest } from "@/lib/validation";
+import { getDeviceInfo, getRequestUserAgent } from "@/lib/validation"
 import IntroductionSection from "./Introduction";
 import { Footer } from "@/components/Footer";
 
@@ -44,10 +44,12 @@ const Home: NextPage<HomeProps> = (props) => {
 };
 
 Home.getInitialProps = (ctx) => {
-	const isMobile = isMobileRequest(ctx);
+	const userAgent = getRequestUserAgent(ctx)
+
+	const { isMobile } = getDeviceInfo(userAgent)
 
 	return {
-		isMobile: !!isMobile,
+		isMobile
 	};
 };
 
