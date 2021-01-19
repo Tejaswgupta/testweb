@@ -1,26 +1,35 @@
 import { NextPageContext } from "next"
 
-import reactDeviceDetect from "react-device-detect"
-
 type DeviceInfo = {
 	isMobile: boolean
 	isDesktop: boolean
 	isAndroid: boolean
 	isIOS: boolean
+	isSafari: boolean
 }
 
-export const getClientDeviceInfo = (): DeviceInfo => {
+export const getClientDeviceInfo = async (): Promise<DeviceInfo> => {
+	const {
+		isMobile,
+		isBrowser,
+		isAndroid,
+		isIOS,
+		isSafari
+	} = await import("react-device-detect")
+
 	return {
-		isMobile: reactDeviceDetect.isMobile,
-		isDesktop: !reactDeviceDetect.isMobile,
-		isAndroid: reactDeviceDetect.isAndroid,
-		isIOS: reactDeviceDetect.isIOS
+		isMobile,
+		isDesktop: isBrowser,
+		isAndroid,
+		isIOS,
+		isSafari
 	}
 }
 
 export const getServerDeviceInfo = (ctx: NextPageContext): DeviceInfo => {
 	const userAgent = ctx?.req?.headers?.["user-agent"]
 
+	const isSafari = Boolean(userAgent.match(/Safari/i))
 	const isAndroid = Boolean(userAgent.match(/Android/i))
 	const isIOS = Boolean(userAgent.match(/iPhone|iPad|iPod/i))
 	const isOpera = Boolean(userAgent.match(/Opera Mini/i))
@@ -33,6 +42,7 @@ export const getServerDeviceInfo = (ctx: NextPageContext): DeviceInfo => {
 		isMobile,
 		isDesktop,
 		isAndroid,
-		isIOS
+		isIOS,
+		isSafari
 	}
 }
