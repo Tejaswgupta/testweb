@@ -18,8 +18,8 @@ import { appUrls } from "@/lib/personal"
 import useResponsiveBreakpoints from "@/hooks/useResponsiveBreakpoints"
 
 const SKILLS = [
-	"Kotlin", "Swift", "Dart" , "Flutter", "Firebase", "Cassandra", "Java", "Git", "CI/CD","Ethical Hacking", "Tensorflow","OpenCV",  
-	"Next.js", "React.js", "Typescript","Database management","Python","Javascript"
+	"Kotlin", "Swift", "Dart" , "Flutter", "Firebase", "Cassandra", "HTML5", "Java", "Git", "CI/CD", "Ethical Hacking", "Tensorflow", "Computer Vision",  
+	"CSS3", "React.js", "Typescript","Database management","Python","Javascript" , "Bootstrap" , "Machine learning" , "Reinforcement learning"
 
 ]
 
@@ -40,7 +40,7 @@ const SkillsSection: React.FC = () => {
 					spotlightWidth="170px"
 					type="About"
 					title="Skills."
-					description="A list of skills I have developed by practical and theoretical experiences."
+					description="A list of skills I have acquired over time"
 				/>
 	
 				<SkillsGlobeContainer

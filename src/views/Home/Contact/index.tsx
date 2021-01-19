@@ -10,7 +10,7 @@ import {
 	ContactSectionContent,
 	ContactInfoContainer,
 	ContactInfoContent,
-	ContactInfoLink
+	ContactInfoLink,
 } from "@/views/Home/Contact/styles"
 
 import { contactMap } from "@/lib/personal"
@@ -22,7 +22,7 @@ const ContactSection: React.FC = () => (
 				spotlightWidth="220px"
 				type="Contact"
 				title="Contact."
-				description="Feel free to reach out if you're looking for a developer, have a question, or just want to connect."
+				description="Have a great idea? Lets talk"
 			/>
 
 			<ContactInfoContainer>
@@ -47,9 +47,9 @@ const ContactSection: React.FC = () => (
 					/>
 
 					<ContactInfoLink
-						href={contactMap.whatsapp.url}
-						target="_blank"
-						rel="noopener"
+	href={contactMap.whatsapp.url}
+	target="_blank"
+	rel="noopener"
 					>
 						{contactMap.whatsapp.rawValue}f
 					</ContactInfoLink>
@@ -57,6 +57,8 @@ const ContactSection: React.FC = () => (
 			</ContactInfoContainer>
 		</ContactSectionContent>
 	</ContactSectionContainer>
+
+
 )
 
 export default ContactSection
