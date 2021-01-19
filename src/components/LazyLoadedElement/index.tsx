@@ -41,14 +41,18 @@ const LazyLoadedElement: React.FC<LazyLoadedElementProps> = (props) => {
 
 		const { isIOS } = getClientDeviceInfo()
 
+		const visibilityWorker = () => {
+			onVisible?.(containerElement, childrenElement)
+
+			setVisible(true)
+		}
+
 		/**
 		 * In case the current browser is Safari, we avoid using lazy loading with
 		 * IntersectionObserver, since it causes a bug of no render.
 		 */
 		if (isIOS) {
-			onVisible?.(containerElement, childrenElement)
-
-			setVisible(true)
+			visibilityWorker()
 		} else {
 			const observer = new IntersectionObserver(callback => {
 				const isContainerVisible = callback?.[0]?.isIntersecting
