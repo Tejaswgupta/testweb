@@ -51,17 +51,15 @@ const Navbar: React.FC = () => {
 					target="_self"
 					rel="noreferrer"
 				>
-					<Logo
-						src="/images/new-logo.png" //Navbar icon 
+					{/* <Logo
+						src="/images/new-logo.webp"
 						alt="logo"
 						width="26px"
 						height="40px"
-					/>
-					<IconButton
-						src="/icons/menu.svg"
-						alt="mail">
-					</IconButton>
+					/> */}
 				</LogoLink>
+
+				
 
 				<Menu
 					isMobileMenuOpened={isMobileMenuOpened}
@@ -78,28 +76,28 @@ const Navbar: React.FC = () => {
 						<MenuItemLink
 							href={appUrls.home}
 							target="_self"
-							rel="noreferrer">
+							rel="noreferrer"
+						>
 							Home
 						</MenuItemLink>
 					</MenuItem>
-
 					<MenuItem>
 						<MenuItemLink
 							href={appUrls.about}
 							target="_blank"
-							rel="noreferrer">
+							rel="noreferrer"
+						>
 							About
 						</MenuItemLink>
 					</MenuItem>
-
 					<MenuItem>
 						<MenuItemLink
 							href={appUrls.projects}
 							target="_self"
-							rel="noreferrer">
+							rel="noreferrer"
+						>
 							Projects
 						</MenuItemLink>
-
 					</MenuItem>
 				</Menu>
 			</NavbarContent>
