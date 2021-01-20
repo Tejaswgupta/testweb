@@ -11,6 +11,8 @@ import {
 
 import {BiMailSend} from "react-icons/bi"
 
+import {contactMap} from "lib/personal"
+
 import { Container, SocialLink } from "./styles"
 
 interface SocialProps {
@@ -20,11 +22,11 @@ interface SocialProps {
 const SocialLinks: React.FC<SocialProps> = ({ isBanner = true }) => {
 	return (
 		<Container>
-			<SocialLink href="https://github.com/tejaswgupta" target="_blank">
+			<SocialLink href={contactMap.github.url}target="_blank">
 				<FaGithub />
 			</SocialLink>
 
-			<SocialLink href="https://instagram.com/tejasw__gupta" target="_blank">
+			<SocialLink href={contactMap.instagram.url} target="_blank">
 				<FaInstagram />
 			</SocialLink>
 
@@ -33,7 +35,7 @@ const SocialLinks: React.FC<SocialProps> = ({ isBanner = true }) => {
       </SocialLink> */}
 
 			<SocialLink
-				href="https://api.whatsapp.com/send?phone=+919935631169&text=Daniel!%20Vi%20seu%20portf%C3%B3lio...%20vamos%20tomar%20um%20caf%C3%A9%3F"
+				href={contactMap.mail.url}
 				target="_blank"
 			>
 				<BiMailSend />
