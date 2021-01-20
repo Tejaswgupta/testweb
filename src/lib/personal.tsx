@@ -1,6 +1,6 @@
 import React from "react"
 
-type ContactType = "github" | "linkedin" | "mail" | "whatsapp"
+type ContactType = "github" | "linkedin" | "mail" | "whatsapp" | "instagram"
 
 type ContactMap = {
 	[type in ContactType]: {
@@ -14,7 +14,7 @@ type ContactMap = {
 export const contactMap: ContactMap = {
 	github: {
 		iconSrc: "/icons/github.svg",
-		url: "https://github.com",
+		url: "https://github.com/tejaswgupta",
 		alt: "github"
 	},
 	linkedin: {
@@ -30,7 +30,13 @@ export const contactMap: ContactMap = {
 	},
 	whatsapp: {
 		iconSrc: "/icons/whatsapp.svg",
-		url: "https://tejaswagupta.me",
+		url: "https://api.whatsapp.com/send?phone=+919935631169&text=Hey",
+		rawValue: "+919935631169",
+		alt: "whatsapp"
+	},
+	instagram:{
+		iconSrc: "/icons/whatsapp.svg",
+		url: "https://instagram.com/tejasw__gupta",
 		rawValue: "+919935631169",
 		alt: "whatsapp"
 	}
