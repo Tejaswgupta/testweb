@@ -40,7 +40,7 @@ const SkillsSection: React.FC = () => {
 					spotlightWidth="170px"
 					type="About"
 					title="Skills."
-					description="A list of skills I have acquired over time"
+					description="A list of languages and framworks that I work with"
 				/>
 	
 				<SkillsGlobeContainer
