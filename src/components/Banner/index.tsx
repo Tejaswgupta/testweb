@@ -40,10 +40,11 @@ const Banner: React.FC = () => {
 							"I develop iOS apps",
 							"I develop Android apps",
 							"I develop Web apps",
+							"I develop ML algorithms"
 						]}
 						typeSpeed={40}
 						backSpeed={20}
-						backDelay={1150}
+						backDelay={1500}
 						showCursor
 						cursorChar="|"
 						loop

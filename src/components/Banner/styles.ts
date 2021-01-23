@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const Container = styled.div`
   background: var(--gray-color-1);
   width: 100%;
-  height: 100vh;
+  height: 99vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,7 +11,7 @@ export const Container = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-bottom: 2vh;
+  padding-bottom: 1vh;
 
   p {
     font-size: 32px;
@@ -78,7 +78,7 @@ font-weight: 600;
 text-transform: uppercase;
 letter-spacing: 10;
 color:var(--gray-color-15);
-margin-bottom: 16px;
+margin-bottom: 1vh;
 `
 
 export const FrontPageSubtitle = styled.h2`
