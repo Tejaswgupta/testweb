@@ -71,4 +71,32 @@ export const KeepGoingButton = styled.a`
   }
 `
 
+export const FrontPageTitle = styled.h1`
+font-size: calc(5vw + 1rem);
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: 10;
+color:var(--gray-color-15);
+margin-bottom: theme.spacing(1);
+`
+
+export const FrontPageSubtitle = styled.h2`
+font-style: italic;
+font-weight: 100;
+font-size: calc(2vw + 1rem);
+user-select: none;
+color:var(--gray-color-15);
+`
+
+export const TypedContainer = styled.div`
+background: var(--gray-color-1);
+width: 100%;
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-size: cover;
+`
+
 // background-image: url('/banner-bg.png');
