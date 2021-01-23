@@ -11,7 +11,7 @@ export const Container = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-bottom: 1vh;
+  padding-bottom: 2vh;
 
   p {
     font-size: 32px;
