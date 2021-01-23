@@ -2,7 +2,7 @@ import React, { useMemo } from "react"
 import Typical from "react-typical"
 import { FaAngleDown } from "react-icons/fa"
 
-import { Container, FrontPageContainer, FrontPageSubtitle, FrontPageTitle, KeepGoingButton, TypedContainer } from "./styles"
+import { Container, FrontPageContainer, FrontPageSubtitle, FrontPageTitle, KeepGoingButton } from "./styles"
 import SocialLinks from "../utils/SocialLinks"
 import { Box } from "../Leon/styled"
 import ReactTyped from "react-typed"
