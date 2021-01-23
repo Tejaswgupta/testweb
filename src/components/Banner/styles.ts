@@ -78,7 +78,7 @@ font-weight: 600;
 text-transform: uppercase;
 letter-spacing: 10;
 color:var(--gray-color-15);
-margin-bottom: theme.spacing(1);
+margin-bottom: 16px;
 `
 
 export const FrontPageSubtitle = styled.h2`
