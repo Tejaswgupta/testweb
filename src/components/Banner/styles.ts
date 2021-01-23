@@ -11,6 +11,7 @@ export const Container = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding-bottom: 2vh;
 
   p {
     font-size: 32px;
@@ -88,8 +89,7 @@ user-select: none;
 color:var(--gray-color-15);
 `
 
-export const TypedContainer = styled.div`
-background: var(--gray-color-1);
+export const FrontPageContainer = styled.div`
 width: 100%;
 height: 100vh;
 display: flex;

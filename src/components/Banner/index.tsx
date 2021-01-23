@@ -2,7 +2,7 @@ import React, { useMemo } from "react"
 import Typical from "react-typical"
 import { FaAngleDown } from "react-icons/fa"
 
-import { Container, FrontPageSubtitle, FrontPageTitle, KeepGoingButton, TypedContainer } from "./styles"
+import { Container, FrontPageContainer, FrontPageSubtitle, FrontPageTitle, KeepGoingButton, TypedContainer } from "./styles"
 import SocialLinks from "../utils/SocialLinks"
 import { Box } from "../Leon/styled"
 import ReactTyped from "react-typed"
@@ -12,28 +12,28 @@ const Banner: React.FC = () => {
 	const bannerType = useMemo(
 		() => (
 
-			<TypedContainer>	
+			<FrontPageContainer>	
 
 				<FrontPageTitle> Tejaswa Gupta</FrontPageTitle>
 
 				<FrontPageSubtitle>
-					{/* <Typical
-						steps={[
-						// "Hey there",
-						// 1800,
-						// "I am Tejaswa Gupta",
-						// 1800,
-							"I develop iOS apps",
-							800,
-							"I develop iOS apps",
-							800,
-								"I develop iOS apps",
-							800,
-							"I develop Machine learning algorithms"
+					{/* // <Typical
+			// 	steps={[
+			// 		"Hey there",
+			// 		1800,
+			// 		"I am Tejaswa Gupta",
+			// 		1800,
+			// 		"I develop iOS apps",
+			// 		800,
+			// 		"I develop Android apps",
+			// 		800,
+			// 		"I develop Web apps",
+			// 		800,
+			// 		"I develop Machine learning algorithms"
 					
-						]}
-						loop={Infinity}
-						wrapper="p"/> */}
+			// 	]}
+			// 	loop={Infinity}
+			// 	wrapper="p"/>  */}
 
 					<ReactTyped
 						strings={[
@@ -51,7 +51,7 @@ const Banner: React.FC = () => {
 
 				</FrontPageSubtitle>
 	
-			</TypedContainer>
+			</FrontPageContainer> 
 
 		
 		),
