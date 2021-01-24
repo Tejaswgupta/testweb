@@ -105,7 +105,11 @@ export const MenuItem = styled.li`
 export const MenuIconItem = styled.li`
 `
 
-export const MenuItemLink = styled.a``
+export const MenuItemLink = styled.a`
+&:hover{
+	opacity:0.5;
+}
+`
 
 export const LogoLink = styled.a`
 	&::before {
