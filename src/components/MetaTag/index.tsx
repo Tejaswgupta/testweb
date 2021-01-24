@@ -41,28 +41,28 @@ const MetaTag: React.FC<MetaTagProps> = (props) => {
 		</>
 	)
 
-	const FacebookMetaTags = (
-		<>
-			<meta property="og:type" content={share?.type} />
-			<meta property="og:url" content={share?.url} />
-			<meta property="og:title" content={share?.title} />
-			<meta property="og:description" content={share?.description} />
-			<meta property="og:image" content={share?.imageSrc} />
-		</>
-	)
+	// const FacebookMetaTags = (
+	// 	<>
+	// 		<meta property="og:type" content={share?.type} />
+	// 		<meta property="og:url" content={share?.url} />
+	// 		<meta property="og:title" content={share?.title} />
+	// 		<meta property="og:description" content={share?.description} />
+	// 		<meta property="og:image" content={share?.imageSrc} />
+	// 	</>
+	// )
 
-	const TwitterMetaTags = (
-		<>
-			<meta property="twitter:card" content="summary_large_image" />
-			<meta property="twitter:url" content={share?.url} />
-			<meta property="twitter:title" content={share?.title} />
-			<meta property="twitter:description" content={share?.description} />
-			<meta property="twitter:image" content={share?.imageSrc} />
-			<meta property="twitter:image:src" content={share?.imageSrc} />
-			<meta name="twitter:label1" {...({ value: "Reading time" })} />
-			<meta name="twitter:data1" {...({ value: share?.readingTime })} />
-		</>
-	)
+	// const TwitterMetaTags = (
+	// 	<>
+	// 		<meta property="twitter:card" content="summary_large_image" />
+	// 		<meta property="twitter:url" content={share?.url} />
+	// 		<meta property="twitter:title" content={share?.title} />
+	// 		<meta property="twitter:description" content={share?.description} />
+	// 		<meta property="twitter:image" content={share?.imageSrc} />
+	// 		<meta property="twitter:image:src" content={share?.imageSrc} />
+	// 		<meta name="twitter:label1" {...({ value: "Reading time" })} />
+	// 		<meta name="twitter:data1" {...({ value: share?.readingTime })} />
+	// 	</>
+	// )
 
 	const SecondaryMetaTags = (
 		<>
@@ -73,25 +73,25 @@ const MetaTag: React.FC<MetaTagProps> = (props) => {
 		</>
 	)
 
-	const AppMetaTags = (
-		<>
-			<meta property="al:ios:url" content={app?.ios?.url} />
-			<meta property="al:ios:app_store_id" content={app?.ios?.appStoreId} />
-			<meta property="al:android:package" content={app?.android?.package} />
-			<meta property="al:android:url" content={app?.android?.url} />
-			<meta property="al:web:url" content={share?.url} />
-			<meta property="al:ios:app_name" content={app?.name} />
-			<meta property="al:android:app_name" content={app?.name} />
-		</>
-	)
+	// const AppMetaTags = (
+	// 	<>
+	// 		<meta property="al:ios:url" content={app?.ios?.url} />
+	// 		<meta property="al:ios:app_store_id" content={app?.ios?.appStoreId} />
+	// 		<meta property="al:android:package" content={app?.android?.package} />
+	// 		<meta property="al:android:url" content={app?.android?.url} />
+	// 		<meta property="al:web:url" content={share?.url} />
+	// 		<meta property="al:ios:app_name" content={app?.name} />
+	// 		<meta property="al:android:app_name" content={app?.name} />
+	// 	</>
+	// )
 
 	return (
 		<Head>
 			{PrimaryMetaTags}
-			{FacebookMetaTags}
-			{TwitterMetaTags}
+			{/* {FacebookMetaTags} */}
+			{/* {TwitterMetaTags} */}
 			{SecondaryMetaTags}
-			{AppMetaTags}
+			{/* {AppMetaTags} */}
 		</Head>
 	)
 }
