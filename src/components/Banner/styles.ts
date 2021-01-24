@@ -11,7 +11,7 @@ export const Container = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-bottom: 2vh;
+  
 
   p {
     font-size: 32px;
@@ -35,7 +35,10 @@ export const KeepGoingButton = styled.a`
   height: 120px;
   display: flex;
   align-items: flex-end;
-  margin-bottom: 1vh;
+
+
+
+  
 
   svg {
     animation-name: bounce;
@@ -88,11 +91,11 @@ font-weight: 100;
 font-size: calc(2vw + 1rem);
 user-select: none;
 color:var(--gray-color-15);
+padding-bottom:5vh;
 `
 
 export const FrontPageContainer = styled.div`
-width: 100%;
-height: 100vh;
+
 display: flex;
 flex-direction: column;
 align-items: center;
