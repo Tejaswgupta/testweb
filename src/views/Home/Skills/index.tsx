@@ -34,7 +34,7 @@ const SkillsSection: React.FC = () => {
 	})
 
 	return (
-		<SkillsSectionContainer>
+		<SkillsSectionContainer id='about'>
 			<SkillsSectionContent>
 				<Summary
 					spotlightWidth="170px"

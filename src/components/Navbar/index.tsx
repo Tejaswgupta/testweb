@@ -84,8 +84,6 @@ const Navbar: React.FC = () => {
 					<MenuItem>
 						<MenuItemLink
 							href={appUrls.about}
-							target="_blank"
-							rel="noreferrer"
 						>
 							About
 						</MenuItemLink>
