@@ -132,7 +132,7 @@ export default createGlobalStyle`
 		
 			}
 
-			&:before:not(a) {
+			&:before{
 				content: "";
 				position: absolute;
 				z-index: -1;

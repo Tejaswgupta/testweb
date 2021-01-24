@@ -1,10 +1,8 @@
 import React, { useMemo } from "react"
-import Typical from "react-typical"
 import { FaAngleDown } from "react-icons/fa"
 
 import { Container, FrontPageContainer, FrontPageSubtitle, FrontPageTitle, KeepGoingButton } from "./styles"
 import SocialLinks from "../utils/SocialLinks"
-import { Box } from "../Leon/styled"
 import ReactTyped from "react-typed"
 
 
@@ -63,7 +61,7 @@ const Banner: React.FC = () => {
 		<Container id="banner">
 			{bannerType}
 			<SocialLinks />
-			<KeepGoingButton href="#about">
+			<KeepGoingButton href="#about" id='KeepGoingButton'>
 				<FaAngleDown />
 			</KeepGoingButton>
 		</Container>
