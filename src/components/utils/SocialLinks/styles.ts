@@ -10,7 +10,7 @@ export const Container = styled.div`
 `
 
 export const SocialLink = styled.a`
-  color: #fff;
+  color: var(--gray-color-15);
   font-size: 16px;
   transition: 0.2s ease-in;
 
