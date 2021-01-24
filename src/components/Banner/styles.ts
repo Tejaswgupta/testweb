@@ -35,6 +35,7 @@ export const KeepGoingButton = styled.a`
   height: 120px;
   display: flex;
   align-items: flex-end;
+  margin-bottom: 1vh;
 
   svg {
     animation-name: bounce;
