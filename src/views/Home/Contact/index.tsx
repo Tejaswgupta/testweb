@@ -1,8 +1,8 @@
 import React from "react"
 
 import {
+	Button,
 	Summary,
-	Icon
 } from "@/components"
 
 import {
@@ -11,9 +11,12 @@ import {
 	ContactInfoContainer,
 	ContactInfoContent,
 	ContactInfoLink,
+	ContactButton,
 } from "@/views/Home/Contact/styles"
 
 import { contactMap } from "@/lib/personal"
+import { BiMailSend } from "react-icons/bi"
+import { SocialLink } from "@/components/utils/SocialLinks/styles"
 
 const ContactSection: React.FC = () => (
 	<ContactSectionContainer>
@@ -22,25 +25,21 @@ const ContactSection: React.FC = () => (
 				spotlightWidth="220px"
 				type="Contact"
 				title="Contact."
-				description="Have a great idea? Lets talk"
+				description="Have a great idea? Lets Talk"
 			/>
 
-			<ContactInfoContainer>
-				<ContactInfoContent>
-					<Icon
-						src={contactMap.mail.iconSrc}
-						alt={contactMap.mail.alt}/>
 
-					<ContactInfoLink
-						href={contactMap.mail.url}
-						target="_blank"
-						rel="noopener">
+			{/* <SocialLink>
+						<BiMailSend/>
+					</SocialLink> */}
 
-						{contactMap.mail.rawValue}
-					</ContactInfoLink>
-				</ContactInfoContent>
+			<ContactButton>
+						Get in touch
+			</ContactButton>
 				
-				{/* <ContactInfoContent>
+			
+				
+			{/* <ContactInfoContent>
 					<Icon
 						src={contactMap.whatsapp.iconSrc}
 						alt={contactMap.whatsapp.alt}
@@ -48,13 +47,13 @@ const ContactSection: React.FC = () => (
 
 					<ContactInfoLink
 					href={contactMap.whatsapp.url}
-					target="_blank"
+				target="_blank"
 					rel="noopener"
 					>
 						{contactMap.whatsapp.rawValue}f
 					</ContactInfoLink>
 				</ContactInfoContent> */}
-			</ContactInfoContainer>
+		
 		</ContactSectionContent>
 	</ContactSectionContainer>
 

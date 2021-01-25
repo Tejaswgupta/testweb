@@ -1,4 +1,5 @@
 import React, { useEffect } from "react"
+import Style from "../../themes/Global"
 
 import {
 	Globe,
@@ -20,6 +21,7 @@ type TagsGlobeProps = {
 	tags: string[]
 }
 
+
 const TagsGlobe: React.FC<TagsGlobeProps> = (props) => {
 	const { width, height, fontSize, tags } = props
 
@@ -27,7 +29,7 @@ const TagsGlobe: React.FC<TagsGlobeProps> = (props) => {
 		elementId: "tags-globe",
 		dragControl: true,
 		noMouse: true,
-		textColour: "#FFFFFF",
+		textColour: "#151515",
 		textHeight: fontSize,
 		initial: [0.2, -0.2]
 	}

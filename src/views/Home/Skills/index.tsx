@@ -37,7 +37,7 @@ const SkillsSection: React.FC = () => {
 		<SkillsSectionContainer id='about'>
 			<SkillsSectionContent>
 				<Summary
-					spotlightWidth="170px"
+					spotlightWidth="150px"
 					type="About"
 					title="Skills."
 					description="A list of languages and framworks that I work with"

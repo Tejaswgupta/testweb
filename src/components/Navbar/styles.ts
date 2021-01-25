@@ -123,12 +123,12 @@ export const NavbarBackground = styled.div<{ isScrolling: boolean }>`
 	top: 0;
 	left: 0;
 
-	background-color: var(--black-color-1);
+	background-color: var(--gray-color-7); //!Background color
 
 	width: 100%;
 	height: ${(props) => props.isScrolling ? "100%" : "0%"};
 
-	transition: all 0.5s;
+	transition: all 1s;
 
 	z-index: 1;
 `

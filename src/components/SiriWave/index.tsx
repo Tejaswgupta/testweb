@@ -18,7 +18,7 @@ const SiriWave: React.FC = () => {
 			setupSiriWave({
 				container: document.getElementById("wave"),
 				speed: 0.02,
-				color: "#FFFFFF",
+				color: "#000000",
 				frequency: 4,
 				autostart: true,
 				amplitude: 1

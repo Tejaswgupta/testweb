@@ -59,7 +59,7 @@ export const WorkItemAbout = styled.div`
 export const WorkItemTitle = styled.h3`
   ${({ theme }) => css`
     margin-bottom: 20px;
-    font-size: ${theme.font.sizes.smallx2};
+    font-size: ${theme.font.normal};
   `}
 `;
 
