@@ -1,6 +1,5 @@
 import * as S from "./styles";
 import PortfolioItems from "../PortfolioItems/index";
-import Titles from "../Titles/index";
 import React, { Component }  from "react";
 import { Summary } from "@/components";
 
