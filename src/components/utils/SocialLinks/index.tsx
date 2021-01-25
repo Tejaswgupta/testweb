@@ -1,12 +1,7 @@
-import { Icon } from "@/components"
-import { Image } from "@/components/LazyLoadedImage/styles"
 import React from "react"
 import {
 	FaInstagram,
 	FaGithub,
-	FaWhatsapp,
-	FaVoicemail,
-	FaMailBulk
 } from "react-icons/fa"
 
 import {BiMailSend} from "react-icons/bi"
