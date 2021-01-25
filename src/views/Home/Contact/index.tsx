@@ -47,9 +47,9 @@ const ContactSection: React.FC = () => (
 					/>
 
 					<ContactInfoLink
-	href={contactMap.whatsapp.url}
-	target="_blank"
-	rel="noopener"
+					href={contactMap.whatsapp.url}
+					target="_blank"
+					rel="noopener"
 					>
 						{contactMap.whatsapp.rawValue}f
 					</ContactInfoLink>

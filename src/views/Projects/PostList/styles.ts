@@ -71,8 +71,8 @@ export const PostItemContent = styled.a<{ postsCount: number }>`
 `
 
 export const PostCover = styled(LazyLoadedImage)`
-	width: 100%;
-	height: 300px;
+    width: 100%;
+    height: 300px; 
 	background-color: var(--gray-color-2);
 	border-radius: 1rem;
 	overflow: hidden;
@@ -83,7 +83,7 @@ export const PostCover = styled(LazyLoadedImage)`
 
 		box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
 
-		object-fit: fit;
+		object-fit: cover;
 		object-position: center;
 
 		transform: scale(1.2);

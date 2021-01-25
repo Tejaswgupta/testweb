@@ -5,7 +5,7 @@ import { getAllDetailedPosts, DetailedPost } from "@/lib/posts"
 
 import BlogLayout from "@/layouts/Blog"
 
-import PostListSection from "@/views/Blog/PostList"
+import PostListSection from "@/views/Projects/PostList"
 
 type BlogProps = {
 	posts: DetailedPost[]

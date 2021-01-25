@@ -18,7 +18,7 @@ import {
 	PostsContainer,
 	PostsContent,
 	PostDivider
-} from "@/views/Blog/PostList/styles"
+} from "@/views/Projects/PostList/styles"
 
 type PostListProps = {
 	posts: DetailedPost[]

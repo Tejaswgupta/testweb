@@ -6,7 +6,9 @@
     "dev": "next dev -p 9000",
     "build": "next build",
     "start": "next start",
-    "export": "next export"
+    "export": "next export",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@emotion/core": "^11.0.0",
@@ -35,6 +37,11 @@
     "styled-system": "^5.1.5"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@storybook/addon-actions": "^6.1.15",
+    "@storybook/addon-essentials": "^6.1.15",
+    "@storybook/addon-links": "^6.1.15",
+    "@storybook/react": "^6.1.15",
     "@types/marked": "^1.2.1",
     "@types/node": "^14.14.20",
     "@types/puppeteer-core": "^2.1.0",
@@ -44,6 +51,7 @@
     "@types/webpack-env": "^1.16.0",
     "@typescript-eslint/eslint-plugin": "^4.12.0",
     "@typescript-eslint/parser": "^4.12.0",
+    "babel-loader": "^8.2.2",
     "babel-plugin-styled-components": "^1.12.0",
     "eslint": "^7.17.0",
     "eslint-config-standard": "^14.1.1",

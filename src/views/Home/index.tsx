@@ -13,6 +13,7 @@ const QuotesSection = dynamic(() => import("@/views/Home/Quotes"));
 
 import { isMobileRequest } from "@/lib/validation";
 import CoffeeLoading from "@/components/CoffeeLoading";
+import PortfolioSection from "./ProjectsSection/PortfolioSection/index";
 
 type HomeProps = {
 	isMobile: boolean;
@@ -30,6 +31,7 @@ const Home: NextPage<HomeProps> = (props) => {
 			<Banner />
 			{/* <TimelineSection /> */}
 			<SkillsSection />
+			<PortfolioSection/>
 			{/* <QuotesSection /> */}
 			<ContactSection />
 		</HomeLayout>

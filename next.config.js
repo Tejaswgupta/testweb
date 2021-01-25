@@ -35,5 +35,6 @@ module.exports = withPlugins([
 	[{
 		target: "serverless",
 		assetPrefix: environmentConfig.isDev ? "" : cdnConfig.baseURL
-	}]
+	}],
+	
 ])
