@@ -68,7 +68,7 @@ export const Handle = styled.div`
   width: 35px;
   z-index: 100;
   background-color: transparent;
-  border: 6px solid white;
+  border: 6px solid var(--gray-color-15);
   position: relative;
   left: 146px;
   top: -2px;
