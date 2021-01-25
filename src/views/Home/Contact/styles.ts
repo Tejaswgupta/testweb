@@ -76,7 +76,7 @@ export const ContactButton = styled.button`
 
 		background-color: var(--gray-color-15);
 
-		transition: all 0.25s;
+		transition: all 0.12s;
 
 		z-index: -1;
 	}
