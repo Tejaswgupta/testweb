@@ -10,6 +10,7 @@ import {
 	ContactSectionContent,
 	ContactButton,
 } from "@/views/Home/Contact/styles"
+import { contactMap } from "@/lib/personal"
 
 
 
@@ -28,7 +29,7 @@ const ContactSection: React.FC = () => (
 						<BiMailSend/>
 					</SocialLink> */}
 
-			<ContactButton>
+			<ContactButton href={contactMap.mail.url}>
 						Get in touch
 			</ContactButton>
 				
