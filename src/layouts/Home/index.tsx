@@ -40,9 +40,10 @@ const HomeLayout: React.FC<HomeLayoutProps> = (props) => {
 
 			{children}
 
-			{!isMobile && (
+			{/* {!isMobile && (
 				<SiriWave />
-			)}
+			)} */}
+			<SiriWave/>
 		</HomeContainer>
 	)
 }
