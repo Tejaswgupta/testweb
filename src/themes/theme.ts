@@ -16,7 +16,7 @@ export const darkTheme = {
 	// colors: {
 	// 	black: "#1a1919",
 	// 	primary: "#0185B2",
-	// 	secondary: "#00aaff",
+	// secondary: "#00aaff",
 	// 	white: "#ffffff"
 	//   },
 	media: {

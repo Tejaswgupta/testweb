@@ -1,5 +1,5 @@
 import React, { useEffect, useState, FC } from "react";
-import * as S from "./styles.test";
+import * as S from "./styles";
 import {PortfolioItemsProps} from "../types";
 
 import projects from "./projects.json";
@@ -51,10 +51,10 @@ const PortfolioItems: FC<PortfolioItemsProps> = () => {
 								{project_description}
 							</S.WorkItemDescription>
 							<S.WorkItemButton>
-								<a href={project_url} target="_blank" rel="noopener noreferrer" style={{fontFamily: "Montserrat"}}>
+								<a href={project_url} target="_blank" rel="noopener noreferrer" >
                   Visit <span>→</span>
 								</a>
-								<a href={project_git} target="_blank" rel="noopener noreferrer" style={{fontFamily: "Montserrat"}}>
+								<a href={project_git} target="_blank" rel="noopener noreferrer" >
                   Repository
 								</a>
 							</S.WorkItemButton>

@@ -1,3 +1,4 @@
+import { LazyLoadedImage } from "@/components";
 import styled, { css } from "styled-components";
 
 // Import keyframes to animate
@@ -58,19 +59,22 @@ export const WorkItemAbout = styled.div`
 export const WorkItemTitle = styled.h3`
   ${({ theme }) => css`
     margin-bottom: 20px;
+ 
     font-size: ${theme.font.sizes.smallx2};
+    font-family: Montserrat;
   `}
 `;
 
 export const WorkItemDescription = styled.p`
   ${({ theme }) => css`
     font-weight: ${theme.font.normal};
-    font-size: ${theme.font.sizes.xsmallx2};
+    font-size: ${theme.font.sizes.small};
     line-height: 1.7;
+    font-family: Montserrat;
 
     margin: 30px 0px;
     @media (max-width: ${theme.media.small}) {
-      font-size: ${theme.font.sizes.xsmall};
+      font-size: ${theme.font.sizes.xsmallx2};
     }
   `}
 `;
@@ -79,6 +83,7 @@ export const WorkItemButton = styled.div`
   ${({ theme }) => css`
     font-weight: ${theme.font.bold};
     font-size: ${theme.font.sizes.xsmallx2};
+    font-family: Montserrat;
 
     display: flex;
     justify-content: space-between;
@@ -88,11 +93,12 @@ export const WorkItemButton = styled.div`
     a {
       color: ${theme.colors.black};
       text-decoration: none;
+      font-family: Montserrat;
 
-      transition: color 0.3s ease;
+      transition: all 0.3s ease;
 
       &:hover {
-        color: ${theme.colors.secondary};
+        opacity:0.5;
       }
     }
     @media (max-width: ${theme.media.large}) {
@@ -104,13 +110,16 @@ export const WorkItemButton = styled.div`
     }
   `}
 `;
-
-export const WorkItemImage = styled.img`
+export const WorkItemImage = styled(LazyLoadedImage)`
   ${({ theme }) => css`
     max-width: 100%;
-    width: 630px;
 
-    margin-left: 50px;
+    height:100%;
+    width:100%;
+
+		object-fit: fit;
+		object-position: center;
+    margin-left: 25px;
 
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
