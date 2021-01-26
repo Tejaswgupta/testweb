@@ -42,7 +42,7 @@ export const ContactInfoLink = styled.a`
 
 `
 
-export const ContactButton = styled.button`
+export const ContactButton = styled.a`
 	background: none;
 
 	position: relative;
@@ -51,7 +51,7 @@ export const ContactButton = styled.button`
 
 	color: var(--gray-color-15);
 
-	padding: 1.2rem 2rem;
+	padding: 1.0rem 2rem;
 
 	margin-top: 1.5vh;
 
@@ -89,6 +89,6 @@ export const ContactButton = styled.button`
 	transition: all 0.5s;
 
 	@media (max-width: 768px) {
-		padding: 0.6rem 1rem
+		padding: 0.4rem 0.8rem;
 	}
 `
