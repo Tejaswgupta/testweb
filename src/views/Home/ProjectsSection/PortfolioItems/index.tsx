@@ -1,9 +1,12 @@
 import React, { useEffect, useState, FC } from "react";
 import * as S from "./styles";
 import {PortfolioItemsProps} from "../types";
+import Image from "next/image";
 
 import projects from "./projects.json";
 import { Container } from "./styles";
+
+
 
 const PortfolioItems: FC<PortfolioItemsProps> = () => {
 	const [scrolledToProjects, SetScrolledToProjects] = useState(false);
@@ -59,7 +62,8 @@ const PortfolioItems: FC<PortfolioItemsProps> = () => {
 								</a>
 							</S.WorkItemButton>
 						</S.WorkItemAbout>
-						<S.WorkItemImage src={project_image} alt="Project" />
+						<S.WorkItemImage src={project_image} alt="Project"  />
+						
 					</S.WorkItem>
 				)
 			)}

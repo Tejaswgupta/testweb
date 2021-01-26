@@ -37,4 +37,8 @@ module.exports = withPlugins([
 		assetPrefix: environmentConfig.isDev ? "" : cdnConfig.baseURL
 	}],
 	
-])
+],{
+	images: {
+		domains: ["images.unsplash.com"]
+	}
+})
