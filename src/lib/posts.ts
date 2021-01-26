@@ -8,7 +8,7 @@ import { getFixedEncodeURIComponent } from "@/lib/url"
 import { getShortDate } from "@/lib/date"
 import { appUrls, authors } from "@/lib/personal"
 
-const POST_FOLDER_PATH = path.join(process.cwd(), "src", "posts")
+const POST_FOLDER_PATH = path.join(process.cwd(), "src", "projects")
 
 type GetPostShareUrls = {
 	Props: {

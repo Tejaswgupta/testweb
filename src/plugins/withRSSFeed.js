@@ -4,7 +4,7 @@ const matter = require("gray-matter")
 const marked = require("marked")
 const readingTime = require("reading-time")
 
-const POST_FOLDER_PATH = path.join(process.cwd(), "src", "posts")
+const POST_FOLDER_PATH = path.join(process.cwd(), "src", "projects")
 
 let isGeneratingRSSFeed = false
 

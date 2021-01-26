@@ -12,7 +12,7 @@ export default async (req: NextApiRequest, res: NextApiResponse): Promise<void> 
 		const filesPath = path.join(process.cwd(), "src")
 
 		const pagesPath = path.join(filesPath, "pages")
-		const postsPath = path.join(filesPath, "posts")
+		const postsPath = path.join(filesPath, "projects")
 
 		const [rawPages, rawPosts] = await Promise.all([
 			fs.promises.readdir(pagesPath),

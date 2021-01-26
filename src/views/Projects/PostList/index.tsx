@@ -34,7 +34,7 @@ const PostList: React.FC<PostListProps> = (props) => {
 					spotlightWidth="220px"
 					type="Knowledge"
 					title="Projects."
-					description="Some content I like to share with other people in other to learn something new by myself."
+					description="Some of my previous projects"
 				/>
 
 				<PostsContainer>
