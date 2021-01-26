@@ -14,7 +14,7 @@ export const NavbarContainer = styled.div`
 	top: 0;
 	left: 0;
 
-	z-index: 4;
+	z-index: 10;
 `
 
 export const NavbarContent = styled.div`
@@ -55,7 +55,7 @@ export const Menu = styled.ul<{ isMobileMenuOpened: boolean }>`
 	position: ${(props) => props.isMobileMenuOpened && "fixed"};
 	height: ${(props) => props.isMobileMenuOpened && "100%"};
 	width: ${(props) => props.isMobileMenuOpened && "100%"};
-	background-color: ${(props) => props.isMobileMenuOpened && "var(--gray-color-15)"};
+	background-color: ${(props) => props.isMobileMenuOpened && "var(--gray-color-1)"};
 	top: ${(props) => props.isMobileMenuOpened && 0};
 	left: ${(props) => props.isMobileMenuOpened && 0};
 
@@ -77,7 +77,7 @@ export const Menu = styled.ul<{ isMobileMenuOpened: boolean }>`
 		}
 
 		a {
-			color: ${(props) => props.isMobileMenuOpened && "var(--gray-color-1)"};
+			color: ${(props) => props.isMobileMenuOpened && "var(--gray-color-15)"};
 		}
 
 		button {

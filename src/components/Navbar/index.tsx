@@ -17,6 +17,8 @@ import { appUrls } from "@/lib/personal"
 import useDidMount from "@/hooks/useDidMount"
 import { BiMenu } from "react-icons/bi"
 import { MenuButton } from "../Summary/styles"
+import { SocialLink } from "../utils/SocialLinks/styles"
+import { FaAddressBook } from "react-icons/fa"
 
 const Navbar: React.FC = () => {
 	const [isScrolling, setIsScrolling] = useState(false)
@@ -98,7 +100,10 @@ const Navbar: React.FC = () => {
 						>
 							Projects
 						</MenuItemLink>
+						
 					</MenuItem>
+			
+					
 				</Menu>
 			</NavbarContent>
 
