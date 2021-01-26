@@ -3,7 +3,6 @@ import React, { useState } from "react"
 import {
 	NavbarContainer,
 	NavbarContent,
-	Logo,
 	Menu,
 	MenuItem,
 	NavbarBackground,
@@ -12,13 +11,12 @@ import {
 	LogoLink
 } from "@/components/Navbar/styles"
 
-import {
-	IconButton
-} from "@/components"
 
 import { appUrls } from "@/lib/personal"
 
 import useDidMount from "@/hooks/useDidMount"
+import { BiMenu } from "react-icons/bi"
+import { MenuButton } from "../Summary/styles"
 
 const Navbar: React.FC = () => {
 	const [isScrolling, setIsScrolling] = useState(false)
@@ -66,10 +64,14 @@ const Navbar: React.FC = () => {
 					onClick={isMobileMenuOpened ? handleCloseMobileMenu : undefined}
 				>
 					<MenuIconItem id="menu-icon-item">
-						<IconButton
-							onClick={toggleMobileMenu}
-							src="/icons/menu.svg"
-						/>
+			
+		
+						<MenuButton onClick={toggleMobileMenu}>
+							<BiMenu />
+						</MenuButton>
+
+						
+
 					</MenuIconItem>
 
 					<MenuItem>
