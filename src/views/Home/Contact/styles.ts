@@ -51,13 +51,10 @@ export const ContactButton = styled.button`
 
 	color: var(--gray-color-15);
 
-	padding: 0 2rem;
+	padding: 1.2rem 2rem;
 
 	margin-top: 1.5vh;
 
-	height: 3.5vh;
-
-	width: 6vw;
 
 	border-radius: 0.5rem;
 
@@ -90,4 +87,8 @@ export const ContactButton = styled.button`
 	}
 
 	transition: all 0.5s;
+
+	@media (max-width: 768px) {
+		padding: 0.6rem 1rem
+	}
 `
