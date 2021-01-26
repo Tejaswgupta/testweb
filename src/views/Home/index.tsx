@@ -15,6 +15,7 @@ const PortfolioSection = dynamic(() => import("./ProjectsSection/PortfolioSectio
 
 import { isMobileRequest } from "@/lib/validation";
 import IntroductionSection from "./Introduction";
+import { Footer } from "@/components/Footer";
 
 
 type HomeProps = {
@@ -25,7 +26,7 @@ const Home: NextPage<HomeProps> = (props) => {
 	const { isMobile } = props;
 
 	return (
-		<HomeLayout isMobile={isMobile}>
+		<HomeLayout >
 			
 			{/* <Header /> */}
 			<CoffeeLoading />
@@ -37,6 +38,7 @@ const Home: NextPage<HomeProps> = (props) => {
 			<PortfolioSection/>
 			{/* <QuotesSection /> */}
 			<ContactSection />
+			<Footer/>
 		</HomeLayout>
 	);
 };
