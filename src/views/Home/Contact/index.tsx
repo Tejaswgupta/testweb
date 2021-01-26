@@ -1,22 +1,17 @@
 import React from "react"
 
 import {
-	Button,
+
 	Summary,
 } from "@/components"
 
 import {
 	ContactSectionContainer,
 	ContactSectionContent,
-	ContactInfoContainer,
-	ContactInfoContent,
-	ContactInfoLink,
 	ContactButton,
 } from "@/views/Home/Contact/styles"
 
-import { contactMap } from "@/lib/personal"
-import { BiMailSend } from "react-icons/bi"
-import { SocialLink } from "@/components/utils/SocialLinks/styles"
+
 
 const ContactSection: React.FC = () => (
 	<ContactSectionContainer>

@@ -14,6 +14,7 @@ const CoffeeLoading = dynamic(() => import("@/components/CoffeeLoading"));
 const PortfolioSection = dynamic(() => import("./ProjectsSection/PortfolioSection/index"));
 
 import { isMobileRequest } from "@/lib/validation";
+import IntroductionSection from "./Introduction";
 
 
 type HomeProps = {
@@ -25,9 +26,10 @@ const Home: NextPage<HomeProps> = (props) => {
 
 	return (
 		<HomeLayout isMobile={isMobile}>
-			{/* <IntroductionSection /> */}
+			
 			{/* <Header /> */}
 			<CoffeeLoading />
+			{/* <IntroductionSection /> */}
 			{/* <Leon onComplete={useIntroContext} color={"black"}/> */}
 			<Banner />
 			{/* <TimelineSection /> */}
