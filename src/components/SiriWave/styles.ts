@@ -6,7 +6,8 @@ export const Wave = styled.div`
 
 	margin: auto;
 
-	opacity: 0.08;
+
+	opacity: 0.1;
 
 	position: fixed;
 
