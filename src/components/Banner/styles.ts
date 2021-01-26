@@ -37,6 +37,7 @@ export const KeepGoingButton = styled.a`
   align-items: flex-end;
   cursor:pointer;
   z-index:6;
+  margin-bottom:2vh;
 
   &:hover{
     opacity:0.5;
@@ -97,7 +98,7 @@ padding-bottom:5vh;
 `
 
 export const FrontPageContainer = styled.div`
-
+height:100vh;
 display: flex;
 flex-direction: column;
 align-items: center;
