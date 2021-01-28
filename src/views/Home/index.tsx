@@ -13,6 +13,7 @@ const Banner = dynamic(()=> import("../../components/Banner")) ;
 const CoffeeLoading = dynamic(() => import("@/components/CoffeeLoading"));
 const PortfolioSection = dynamic(() => import("./ProjectsSection/PortfolioSection/index"));
 
+
 import { getServerDeviceInfo } from "@/lib/device"
 import IntroductionSection from "./Introduction";
 import { Footer } from "@/components/Footer";
