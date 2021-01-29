@@ -6,7 +6,7 @@ import { ThemeProvider } from "styled-components"
 import DefaultLayout from "@/layouts/Default"
 
 import GlobalStyles from "@/themes/Global"
-import theme , {lightTheme} from "../themes/theme"
+import darktheme , {lightTheme} from "../themes/theme"
 
 const App: NextPage<AppProps> = ({ Component, pageProps }) => {
 	return (
