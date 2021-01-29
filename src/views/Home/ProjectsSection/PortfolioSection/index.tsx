@@ -12,7 +12,7 @@ const PortfolioSection: React.FC= () => {
 			 */}
 			<S.PortfolioSectionContent>
 				<Summary
-					spotlightWidth="220px"
+					spotlightWidth="4.5em"
 					type="About"
 					title="Projects."
 					description="A brief list of my projects"
