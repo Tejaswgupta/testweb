@@ -18,7 +18,7 @@ const ContactSection: React.FC = () => (
 	<ContactSectionContainer>
 		<ContactSectionContent>
 			<Summary
-				spotlightWidth="220px"
+				spotlightWidth="4.2em"
 				type="Contact"
 				title="Contact."
 				description="Have a great idea? Lets Talk"
