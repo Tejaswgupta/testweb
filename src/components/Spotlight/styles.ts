@@ -29,3 +29,6 @@ export const SpotlightContent = styled.span<SpotlightProps & { visible: boolean 
 		transition: all 0.5s;
 	}
 ` 
+
+// linear-gradient(90deg , #12c2e9, #c471ed , #f64f59);
+// linear-gradient(45deg , #FC466B , #3F5EFB);
