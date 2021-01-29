@@ -34,7 +34,7 @@ const Summary: React.FC<SummaryProps> = (props) => {
 					width={spotlightWidth}
 					bottom="-0.5rem"
 					left="0"
-					height="3.5rem"
+					height="50%"
 				>
 					<SummaryTitle>
 						{title}
