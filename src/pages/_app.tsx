@@ -5,13 +5,21 @@ import { ThemeProvider } from "styled-components"
 import DefaultLayout from "@/layouts/Default"
 import GlobalStyles from "@/themes/Global"
 
-import  {lightTheme, darkTheme} from "../themes/theme"
+import  { darkTheme, lightTheme} from "../themes/theme";
+import withDarkMode, { useDarkMode } from "next-dark-mode";
 
 
 
-const App: NextPage<AppProps> = ({ Component ,pageProps }) => {
+const App: NextPage<AppProps> = ({ Component  ,pageProps }) => {
 	
-
+	const {
+		autoModeActive,
+		autoModeSupported,
+		darkModeActive,
+		switchToAutoMode,
+		switchToDarkMode,
+		switchToLightMode,
+	} = useDarkMode();
 	
 
 	return (

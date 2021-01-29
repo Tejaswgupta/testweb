@@ -59,7 +59,7 @@ export const WorkItemAbout = styled.div`
 export const WorkItemTitle = styled.h3`
   ${({ theme }) => css`
     margin-bottom: 20px;
- 
+    color: var(--gray-color-15);
     font-size: ${theme.font.sizes.smallx2};
     font-family: Montserrat;
   `}
@@ -71,6 +71,7 @@ export const WorkItemDescription = styled.p`
     font-size: ${theme.font.sizes.small};
     line-height: 1.7;
     font-family: Montserrat;
+    color: var(--gray-color-15);
 
     margin: 30px 0px;
     @media (max-width: ${theme.media.small}) {

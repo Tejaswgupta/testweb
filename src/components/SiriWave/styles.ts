@@ -14,7 +14,7 @@ export const Wave = styled.div`
 	top: 0;
 	bottom: 0;
 
-	transform: rotate(90deg);
+	transform: rotate(90deg);  //! Rotate to wave
 
 	z-index: 1;
 `
