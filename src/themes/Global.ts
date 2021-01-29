@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components"
 
 export default createGlobalStyle`
 	:root {
-		--gray-color-1: #FFFFFF;
+		--gray-color-1: ${({ theme }) => theme.colors.primary};
 		--gray-color-2: #2C2C2C;
 		--gray-color-3: #3B3B3B;
 		--gray-color-4: #4C4C4C;
@@ -16,7 +16,7 @@ export default createGlobalStyle`
 		--gray-color-12: #C8C8C8;
 		--gray-color-13: #D7D7D7;
 		--gray-color-14: #F2F2F2;
-		--gray-color-15: #151515;
+		--gray-color-15: ${({ theme }) => theme.colors.secondry};
 
     --black-color-1: #252525;
     --black-color-2: #7F8084;

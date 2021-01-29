@@ -110,6 +110,14 @@ export const MenuItemLink = styled.a`
 	opacity:0.5;
 }
 `
+export const MenuItemButton = styled.button`
+
+z-index: 400;
+
+&:hover{
+	opacity:0.5;
+}
+`
 
 export const LogoLink = styled.a`
 	&::before {

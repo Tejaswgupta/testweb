@@ -8,7 +8,8 @@ import {
 	NavbarBackground,
 	MenuIconItem,
 	MenuItemLink,
-	LogoLink
+	LogoLink,
+	MenuItemButton,
 } from "@/components/Navbar/styles"
 
 
@@ -17,10 +18,12 @@ import { appUrls } from "@/lib/personal"
 import useDidMount from "@/hooks/useDidMount"
 import { BiMenu } from "react-icons/bi"
 import { MenuButton } from "../Summary/styles"
-import { SocialLink } from "../utils/SocialLinks/styles"
-import { FaAddressBook } from "react-icons/fa"
+
 
 const Navbar: React.FC = () => {
+
+
+
 	const [isScrolling, setIsScrolling] = useState(false)
 
 	const [isMobileMenuOpened, setIsMobileMenuOpened] = useState(false)
@@ -50,13 +53,9 @@ const Navbar: React.FC = () => {
 					href={appUrls.home}
 					target="_self"
 					rel="noreferrer"
-				>
-					{/* <Logo
-						src="/images/new-logo.webp"
-						alt="logo"
-						width="26px"
-						height="40px"
-					/> */}
+				>	
+
+									
 				</LogoLink>
 
 				
@@ -102,7 +101,11 @@ const Navbar: React.FC = () => {
 						</MenuItemLink>
 						
 					</MenuItem>
+				
 			
+
+
+					
 					
 				</Menu>
 			</NavbarContent>

@@ -1,7 +1,9 @@
-export const darkTheme = {
+import React from "react";
+
+export const lightTheme = {
 	colors: {
-		primary: "#fff",
-		background: "#f5f5f5",
+		primary: "#FFFFFF",
+		secondry: "#151515",
 		textTitle: "#333",
 		text: "#777",
 		error: "#ff3d3d"
@@ -11,14 +13,6 @@ export const darkTheme = {
 		medium: "1024px"
 	},
 	wrapper: "1180px",
-
-	//!For Portfolio Section
-	// colors: {
-	// 	black: "#1a1919",
-	// 	primary: "#0185B2",
-	// secondary: "#00aaff",
-	// 	white: "#ffffff"
-	//   },
 	media: {
 		medium: "1200px",
 		large: "1400px",
@@ -34,36 +28,38 @@ export const darkTheme = {
 			italic: "italic",
 		},
 		sizes: {
-			// xxsmall: "1rem",
-			// xxsmallx2: "1.15rem",
-			// xxsmallx3: "1.2rem",
-			// xsmall: "1.4rem",
-			// xsmallx2: "1.5rem",
-			// small: "1.7rem",
-			// smallx2: "2.0rem",
-			// medium: "2.5rem",
-			// mediumx2: "3.7rem",
-			// large: "8rem",
+			xxsmall: "1rem",
+			xxsmallx2: "1.15rem",
+			xxsmallx3: "1.2rem",
+			xsmall: "1.4rem",
+			xsmallx2: "1.5rem",
+			small: "1.7rem",
+			smallx2: "2.0rem",
+			medium: "2.5rem",
+			mediumx2: "3.7rem",
+			large: "8rem",
 
-			xxsmall: "2rem",
-			xxsmallx2: "2.3rem",
-			xxsmallx3: "2.4rem",
-			xsmall: "2.8rem",
-			xsmallx2: "3.0rem",
-			small: "3.4rem",
-			smallx2: "4.0rem",
-			medium: "5.0rem",
-			mediumx2: "7.4rem",
-			large: "16rem",
+			// xxsmall: "2rem",
+			// xxsmallx2: "2.3rem",
+			// xxsmallx3: "2.4rem",
+			// xsmall: "2.8rem",
+			// xsmallx2: "3.0rem",
+			// small: "3.4rem",
+			// smallx2: "4.0rem",
+			// medium: "5.0rem",
+			// mediumx2: "7.4rem",
+			// large: "16rem",
 		}
 	}
 
 }
 
-export const lightTheme = {
+
+
+export const darkTheme = {
 	colors: {
-		primary: "#000000",
-		background: "#f5f5f5",
+		primary: "#151515",
+		secondry: "#FFFFFF",
 		textTitle: "#333",
 		text: "#fff",
 		error: "#ff3d3d"
@@ -74,13 +70,6 @@ export const lightTheme = {
 	},
 	wrapper: "1180px",
 
-	//For Portfolio Section
-	// colors: {
-	// 	black: "#1a1919",
-	// 	primary: "#0185B2",
-	// 	secondary: "#00aaff",
-	// 	white: "#ffffff"
-	//   },
 	media: {
 		medium: "1400px",
 		large: "1200px",
@@ -106,11 +95,20 @@ export const lightTheme = {
 			medium: "2.5rem",
 			mediumx2: "3.7rem",
 			large: "8rem",
+
+			// xxsmall: "2rem",
+			// xxsmallx2: "2.3rem",
+			// xxsmallx3: "2.4rem",
+			// xsmall: "2.8rem",
+			// xsmallx2: "3.0rem",
+			// small: "3.4rem",
+			// smallx2: "4.0rem",
+			// medium: "5.0rem",
+			// mediumx2: "7.4rem",
+			// large: "16rem",
 		}
 	}
 }
   
-  
-export default darkTheme
-  
+
   

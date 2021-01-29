@@ -1,20 +1,26 @@
-import React from "react"
+import React, { useState } from "react"
 import { AppProps, NextWebVitalsMetric } from "next/app"
 import { NextPage } from "next"
 import { ThemeProvider } from "styled-components"
-
 import DefaultLayout from "@/layouts/Default"
-
 import GlobalStyles from "@/themes/Global"
-import darktheme , {lightTheme} from "../themes/theme"
 
-const App: NextPage<AppProps> = ({ Component, pageProps }) => {
+import  {lightTheme, darkTheme} from "../themes/theme"
+
+
+
+const App: NextPage<AppProps> = ({ Component ,pageProps }) => {
+	
+
+	
+
 	return (
 		<ThemeProvider theme={lightTheme}>
 
-			<DefaultLayout>
-				<GlobalStyles />
+			<GlobalStyles />
 
+			<DefaultLayout>		
+				
 				<Component {...pageProps}  />
 
 			</DefaultLayout>
