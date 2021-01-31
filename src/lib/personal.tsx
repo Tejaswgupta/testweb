@@ -153,7 +153,8 @@ export const timeline: Timeline[] = [
 export const appUrls = {
 	home: "/",
 	projects: "projects",
-	about: "/Resume.pdf",
+	resume: "/Resume.pdf",
+	about: "https://about.tejaswagupta.me/",
 	skills: "https://skills.tejaswagupta.me/"
 }
 
