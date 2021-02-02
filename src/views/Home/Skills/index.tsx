@@ -19,7 +19,7 @@ import useResponsiveBreakpoints from "@/hooks/useResponsiveBreakpoints"
 
 const SKILLS = [
 	"Kotlin", "Swift", "Dart" , "Flutter", "Firebase", "Cassandra", "HTML5", "Java", "Git", "CI/CD", "Ethical Hacking", "Tensorflow", "Computer Vision",  
-	"CSS3", "React.js", "Typescript","Database management","Python","Javascript" , "Bootstrap" , "Machine learning" , "Reinforcement learning"
+	"CSS3", "React.js", "Typescript","Database management","Reinforcement learning","Next.js","Python","Javascript" , "Bootstrap" , "Machine learning" , 
 
 ]
 
