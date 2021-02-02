@@ -11,7 +11,7 @@ import { Container } from "./styles";
 const PortfolioItems: FC<PortfolioItemsProps> = () => {
 	const [scrolledToProjects, SetScrolledToProjects] = useState(false);
 
-	// Animate on scroll like "AOS" lib
+
 	useEffect(() => {
 		const scrollDownMakeProjectsAppear = () => {
 			const valueScrolledByUser = window.scrollY;
