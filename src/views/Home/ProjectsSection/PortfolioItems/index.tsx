@@ -5,6 +5,7 @@ import Image from "next/image";
 
 import projects from "./projects.json";
 import { Container } from "./styles";
+import Link from "next/link";
 
 
 
@@ -53,14 +54,29 @@ const PortfolioItems: FC<PortfolioItemsProps> = () => {
 							<S.WorkItemDescription>
 								{project_description}
 							</S.WorkItemDescription>
-							<S.WorkItemButton>
+							{/* <S.WorkItemButton>
 								<a href={project_url} target="_blank" rel="noopener noreferrer" >
                   Visit <span>→</span>
 								</a>
 								<a href={project_git} target="_blank" rel="noopener noreferrer" >
                   Repository
 								</a>
+							</S.WorkItemButton> */}
+
+					
+							
+
+							<S.WorkItemButton>
+								<Link href={{ pathname: "/repo/[id]", query: { name: `${project_name}` } }} as={`/repo/${project_name}`}>
+									<a>
+                  Visit <span>→</span>
+									</a>
+								</Link>
+								{/* <a href={project_git} target="_blank" rel="noopener noreferrer" >
+                  Repository
+								</a> */}
 							</S.WorkItemButton>
+
 						</S.WorkItemAbout>
 						<S.WorkItemImage src={project_image} alt="Project"  />
 						
