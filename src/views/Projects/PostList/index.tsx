@@ -3,6 +3,7 @@ import Link from "next/link"
 
 import { DetailedPost } from "@/lib/posts"
 import { chunk, orderBy } from "@/lib/array"
+import projects from "../../Home/ProjectsSection/PortfolioItems/projects.json"
 
 import {
 	Summary,
@@ -20,11 +21,20 @@ import {
 	PostDivider
 } from "@/views/Projects/PostList/styles"
 
-type PostListProps = {
-	posts: DetailedPost[]
+
+export type ProjectProps = {
+	project_name: string,
+	project_description: string,
+	project_image: string,
+	tags: string[],
+
 }
 
-const PostList: React.FC<PostListProps> = (props) => {
+export type ProjectListProps = {
+	posts: ProjectProps[]
+}
+
+const PostList: React.FC<ProjectListProps> = (props) => {
 	const { posts } = props
 
 	return (
@@ -38,57 +48,68 @@ const PostList: React.FC<PostListProps> = (props) => {
 				/>
 
 				<PostsContainer>
-					{posts
-						.sort(orderBy<DetailedPost>("dateInMilliseconds", "ASC"))
-						.reverse()
-						.reduce(chunk<DetailedPost[][], DetailedPost>(3), [])
-						.reverse()
-						.map((postChunk, index) => (
-							<React.Fragment
-								key={index}
-							>
-								<PostsContent
-									postsCount={postChunk.length}
+					{projects
+						.reduce(chunk<ProjectProps[][], ProjectProps>(3), [])
+						.map(
+							(
+					
+								postChunk,
+								index
+							) => (
+								<React.Fragment
+									key={index}
 								>
-									{
-										postChunk
-											.filter(post => post.published)
-											.map((post) => (
-												<PostItemContainer
-													key={post.slug}
+									<PostsContent
+										postsCount={postChunk.length}
+									>
+										{
+									
+											postChunk.map((		{
+												project_name,
+												project_description,
+												project_image,
+												tags 
+											
+											})=>(<PostItemContainer
+												key={project_name}
+											>
+												<button onClick={()=>console.log(postChunk)}>
+																Click
+												</button>
+												<Link
+													key={project_name}
+													// href={`repo/${project_name}`}
+													as={`repo/${project_name}`}
+													href={{ pathname:`repo/${project_name}` , query: { project_name: `${project_name}` , project_description: `${project_description}` , project_image: `${project_image}` , tags: `${["Ftets", "uvi"]}`}}}
+													passHref
 												>
-													<Link
-														key={post.slug}
-														href={post.slug}
-														passHref
+													<PostItemContent
+														postsCount={projects.length}
 													>
-														<PostItemContent
-															postsCount={postChunk.length}
-														>
-															<PostCover
-																src={post.coverSrc}
-																alt={post.title}
-															/>
-				
-															<PostInfo
-																date={post.shortDate}
-																description={post.description}
-																readingTime={post.readingTime}
-																tags={post.tags}
-																title={post.title}
-																authorName={post.authorName}
-																authorAvatarSrc={post.authorAvatarSrc}
-															/>
-														</PostItemContent>
-													</Link>
-												</PostItemContainer>
-											))
-									}
-								</PostsContent>
+														<PostCover
+															src={project_image}
+															alt={project_name}
+														/>
+					
+														<PostInfo
+															description={project_description}
+															tags = {tags}
+															title={project_name}
+															authorName="Tejaswa Gupta"
+															authorAvatarSrc={project_image}
+															date="date"
+														/>
+														
+													</PostItemContent>
+												</Link>
+											</PostItemContainer>))
+												
+										}
+									</PostsContent>
 
-								<PostDivider />
-							</React.Fragment>
-						))}
+									<PostDivider />
+								</React.Fragment>
+							))}
 				</PostsContainer>
 			</PostListSectionContent>
 		</PostListSectionContainer>
