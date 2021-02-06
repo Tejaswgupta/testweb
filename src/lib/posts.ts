@@ -49,17 +49,11 @@ export type DetailedPost = {
 	description: string
 	coverSrc: string
 	tags: string[]
-	readingTime: string
-	date: string
-	shortDate: string
-	dateInMilliseconds: number
 	content: string
-	published: boolean
 	slug: string
 	authorName: string
 	authorAvatarSrc: string
-	authorUrl: string
-	shareUrls: GetPostShareUrls["Response"]
+	date: string
 }
 
 export const getDetailedPostBySlug = async (slug: string): Promise<DetailedPost> => {
@@ -87,19 +81,13 @@ export const getDetailedPostBySlug = async (slug: string): Promise<DetailedPost>
 	return {
 		title: postTitle,
 		description: meta.data.description || "",
-		date: dateInString || "",
-		shortDate,
-		dateInMilliseconds,
 		tags: meta.data.tags || [],
-		readingTime: readingTimeTextInfo.text || "",
-		published: meta.data.published || false,
 		coverSrc: meta.data.cover || "",
 		content,
 		slug,
 		authorAvatarSrc: authors.Owner.avatarSrc,
 		authorName: authors.Owner.name,
-		authorUrl: authors.Owner.url,
-		shareUrls: postShareUrls
+		date:"date"
 	}
 }
 
