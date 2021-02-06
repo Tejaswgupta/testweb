@@ -12,10 +12,8 @@ type BlogPostLayoutProps = {
 	title: string;
 	description: string;
 	coverSrc: string;
-	date: string;
-	readingTime: string;
 	authorName: string;
-	authorUrl: string;
+
 };
 
 const BlogPostLayout: React.FC<BlogPostLayoutProps> = (props) => {
@@ -25,10 +23,6 @@ const BlogPostLayout: React.FC<BlogPostLayoutProps> = (props) => {
 		coverSrc,
 		title,
 		slug,
-		date,
-		readingTime,
-		authorName,
-		authorUrl,
 	} = props;
 
 	const imageSrc = buildImageSharePath(coverSrc);
@@ -45,11 +39,9 @@ const BlogPostLayout: React.FC<BlogPostLayoutProps> = (props) => {
 					description,
 					imageSrc,
 					url: `${appUrls.projects}/${slug}`,
-					authorName,
-					authorUrl,
+			
 					type: "article",
-					publishDate: date,
-					readingTime,
+				
 				}} />
 
 			{children}
