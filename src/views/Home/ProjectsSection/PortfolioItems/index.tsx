@@ -41,6 +41,7 @@ const PortfolioItems: FC<PortfolioItemsProps> = () => {
 						project_git,
 						project_image,
 						project_url,
+						tags
 					},
 					index
 				) => (
@@ -67,7 +68,10 @@ const PortfolioItems: FC<PortfolioItemsProps> = () => {
 							
 
 							<S.WorkItemButton>
-								<Link href={{ pathname: "/repo/[id]", query: { name: `${project_name}` } }} as={`/repo/${project_name}`}>
+								<Link 	
+									as={`repo/${project_name}`}
+									href={{ pathname:`repo/${project_name}` , query: { project_name: `${project_name}` , project_description: `${project_description}` , project_image: `${project_image}` , tags: `${tags ?? ["Misc", "New"]}`}}}
+								>
 									<a>
                   Visit <span>→</span>
 									</a>
