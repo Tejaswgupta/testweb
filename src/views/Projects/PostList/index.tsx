@@ -50,6 +50,7 @@ const PostList: React.FC<ProjectListProps> = (props) => {
 				<PostsContainer>
 					{projects
 						.reduce(chunk<ProjectProps[][], ProjectProps>(3), [])
+						.reverse()
 						.map(
 							(
 					
@@ -73,14 +74,12 @@ const PostList: React.FC<ProjectListProps> = (props) => {
 											})=>(<PostItemContainer
 												key={project_name}
 											>
-												<button onClick={()=>console.log(postChunk)}>
-																Click
-												</button>
+										
 												<Link
 													key={project_name}
 													// href={`repo/${project_name}`}
 													as={`repo/${project_name}`}
-													href={{ pathname:`repo/${project_name}` , query: { project_name: `${project_name}` , project_description: `${project_description}` , project_image: `${project_image}` , tags: `${["Ftets", "uvi"]}`}}}
+													href={{ pathname:`repo/${project_name}` , query: { project_name: `${project_name}` , project_description: `${project_description}` , project_image: `${project_image}` , tags: `${tags ?? ["Misc", "New"]}`}}}
 													passHref
 												>
 													<PostItemContent
@@ -93,7 +92,7 @@ const PostList: React.FC<ProjectListProps> = (props) => {
 					
 														<PostInfo
 															description={project_description}
-															tags = {tags}
+															tags = {tags ?? ["Misc", "New"]}
 															title={project_name}
 															authorName="Tejaswa Gupta"
 															authorAvatarSrc={project_image}
