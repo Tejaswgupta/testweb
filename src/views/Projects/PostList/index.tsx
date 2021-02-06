@@ -78,8 +78,8 @@ const PostList: React.FC<ProjectListProps> = (props) => {
 												<Link
 													key={project_name}
 													// href={`repo/${project_name}`}
-													as={`repo/${project_name}`}
-													href={{ pathname:`repo/${project_name}` , query: { project_name: `${project_name}` , project_description: `${project_description}` , project_image: `${project_image}` , tags: `${tags ?? ["Misc", "New"]}`}}}
+													as={`projects/${project_name}`}
+													href={{ pathname:`projects/${project_name}` , query: { project_name: `${project_name}` , project_description: `${project_description}` , project_image: `${project_image}` , tags: `${tags ?? ["Misc", "New"]}`}}}
 													passHref
 												>
 													<PostItemContent
