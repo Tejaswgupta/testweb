@@ -18,7 +18,6 @@ type PostInfoProps = {
 	title: string
 	description: string
 	date: string
-	readingTime: string
 	authorName: string
 	authorAvatarSrc: string
 }
@@ -27,7 +26,6 @@ const PostInfo: React.FC<PostInfoProps> = (props) => {
 	const {
 		tags,
 		title,
-		readingTime,
 		description,
 		date,
 		authorName,
@@ -67,7 +65,7 @@ const PostInfo: React.FC<PostInfoProps> = (props) => {
 					</PostAuthorName>
 
 					<ExtraInfo>
-						{date} - {readingTime}
+						{date}
 					</ExtraInfo>
 				</DetailsContainer>
 			</PostAuthorContainer>
