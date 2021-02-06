@@ -5,10 +5,10 @@ import { DetailedPost } from "@/lib/posts"
 import {
 	PostSingleSectionContainer,
 	PostSingleSectionContent,
-	PostInfo,
 	PostCover,
 	PostContent
 } from "@/views/Projects/PostSingle/styles"
+import { PostInfo } from "@/components"
 
 type PostSingleProps = {
 	post: DetailedPost
@@ -21,9 +21,8 @@ const PostSingle: React.FC<PostSingleProps> = (props) => {
 		<PostSingleSectionContainer>
 			<PostSingleSectionContent>
 				<PostInfo 
-					date={post.shortDate}
-					description={post.description}
-					readingTime={post.readingTime}
+					date="date"
+					description={post.description}	
 					tags={post.tags}
 					title={post.title}
 					authorName={post.authorName}
