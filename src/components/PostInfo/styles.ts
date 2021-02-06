@@ -10,10 +10,6 @@ export const PostInfoContainer = styled.div`
 
 	& > * {
 		margin-bottom: 2rem;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
 	}
 
 	@media (max-width: 768px) {
