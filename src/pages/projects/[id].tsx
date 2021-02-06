@@ -30,7 +30,7 @@ const Post: NextPage<PostProps> = (props) => {
 
 	const router = useRouter();
 	const { project_name, project_description , project_image , tags } = router.query;
-	// const updatedTags = [...tags];
+	// const x = tags ?? ["Misc"];
 
 	useEffect(() => {
 		console.log(tags);
@@ -57,7 +57,7 @@ const Post: NextPage<PostProps> = (props) => {
 			authorName='Tejaswa Gupta'
 		>
 			<PostSingleSection
-				post={customProp}
+				{...customProp}
 			/>
 		</BlogPostLayout>
 	)
