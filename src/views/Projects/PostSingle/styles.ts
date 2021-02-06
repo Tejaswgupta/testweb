@@ -24,20 +24,19 @@ export const PostInfo = styled(PostInfoComponent)`
 
 export const PostCover = styled(LazyLoadedImage)`
 	width: 100%;
-	background-color: var(--gray-color-2);
-	border-radius: 1rem;
-	overflow: hidden;
+	height: 50vh;
+
+	display:flex;
+	flex-direction:row;
+
+	background-color: black;
+	overflow: auto;
+	border-radius: 4rem;
 
 	img {
-		width: 100%;
-		height: 100%;
-
-		box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.25);
-
-		object-fit: cover;
+		width:100%;
+		object-fit: fill;
 		object-position: center;
-
-		transform: scale(1.2);
 	}
 `
 
