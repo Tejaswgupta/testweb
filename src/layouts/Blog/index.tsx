@@ -10,7 +10,9 @@ import { buildCDNUrl } from "@/lib/cdn"
 import { appUrls } from "@/lib/personal"
 
 const BlogLayout: React.FC = (props) => {
-	const { children } = props
+	const {children } = props
+
+	
 
 	const title = "Projects | Tejaswa Gupta"
 	const description = "All Projects made by Tejaswa Gupta"
