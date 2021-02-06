@@ -161,7 +161,7 @@ export const appUrls = {
 export const authors = {
 	Owner: {
 		name: "Tejaswa Gupta",
-		avatarSrc: "/images/mini-avatar.png",
+		avatarSrc: "/images/new-logo.webp",
 		url: contactMap.github.url
 	}
 }
