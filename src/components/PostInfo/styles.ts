@@ -98,11 +98,11 @@ export const DetailsContainer = styled.div`
 `
 
 export const PostAuthorName = styled.h2`
-	color: var(--gray-color-14);
+	color: var(--gray-color-4);
 
 	margin-bottom: 0.5rem;
 `
 
 export const ExtraInfo = styled.small`
-	color: var(--gray-color-14);
+	color: var(--gray-color-4);
 `
