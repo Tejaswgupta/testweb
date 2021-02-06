@@ -10,32 +10,29 @@ import {
 } from "@/views/Projects/PostSingle/styles"
 import { PostInfo } from "@/components"
 
-type PostSingleProps = {
-	post: DetailedPost
-}
 
-const PostSingle: React.FC<PostSingleProps> = (props) => {
-	const { post } = props
+const PostSingle: React.FC<DetailedPost> = (props) => {
+
 
 	return (
 		<PostSingleSectionContainer>
 			<PostSingleSectionContent>
 				<PostInfo 
-					date="date"
-					description={post.description}	
-					tags={post.tags}
-					title={post.title}
-					authorName={post.authorName}
-					authorAvatarSrc={post.authorAvatarSrc}
+					date= {props.date}
+					description={props.description}	
+					tags={props.tags}
+					title={props.title}
+					authorName={props.authorName}
+					authorAvatarSrc={props.authorAvatarSrc}
 				/>
 
 				<PostCover
-					src={post.coverSrc}
-					alt={post.title}
+					src={props.coverSrc}
+					alt={props.title}
 				/>
 
 				<PostContent
-					dangerouslySetInnerHTML={{ __html: post.content }}
+					dangerouslySetInnerHTML={{ __html: props.content }}
 				/>
 			</PostSingleSectionContent>
 		</PostSingleSectionContainer>
