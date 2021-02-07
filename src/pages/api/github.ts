@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 
 const {Octokit} = require("@octokit/rest");
 
-export default async (req: NextApiRequest,res:NextApiResponse) => { 
+export default async (req: NextApiRequest,res:NextApiResponse): Promise<void> => { 
 
 
 	try{
@@ -18,7 +18,7 @@ export default async (req: NextApiRequest,res:NextApiResponse) => {
 		// 	}
 		// );
     
-		return res.status(200).json({
+		res.status(200).json({
 			// repo: repos,
 			count: count,
 		});
