@@ -34,6 +34,8 @@ const PostSingle: React.FC<DetailedPost> = (props) => {
 				<PostContent
 					dangerouslySetInnerHTML={{ __html: props.content }}
 				/>
+				{/* {props.content}
+				</PostContent> */}
 			</PostSingleSectionContent>
 		</PostSingleSectionContainer>
 	)

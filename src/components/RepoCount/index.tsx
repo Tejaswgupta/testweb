@@ -20,7 +20,9 @@ const repoCount: NextPage = () => {
 		<Content>
 			
 
-			<RepoCountBox>Github Repository Count: {+data.count.data.owned_private_repos + +data.count.data.public_repos}</RepoCountBox>
+			{/* <RepoCountBox>Github Repository Count: {+data.count.data.owned_private_repos + +data.count.data.public_repos}</RepoCountBox> */}
+
+			<RepoCountBox>UNDER ACTIVE CONSTRUCTION</RepoCountBox>
 
 			{/* <ShadowText>Github Repository Count: {+data.count.data.owned_private_repos + +data.count.data.public_repos}</ShadowText> */}
 		

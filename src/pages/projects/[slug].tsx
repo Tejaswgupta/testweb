@@ -3,7 +3,7 @@ import { NextPage } from "next"
 import { useRouter } from "next/router"
 
 
-import BlogPostLayout from "@/layouts/BlogPost"
+// import BlogPostLayout from "@/layouts/BlogPost" //! BlogPostLayout causing error on server due to some reason.
 
 import PostSingleSection from "@/views/Projects/PostSingle"
 
@@ -17,6 +17,11 @@ const Post = () => {
 	const router = useRouter();
 	const { project_name, project_description , project_image , tags } = router.query;
 
+	const images = [
+		"/images/new-logo.webp",
+		"/images/new-logo.webp",
+		"/images/new-logo.webp",
+	];
 
 	const customProp: DetailedPost = {
 		title: project_name as string,  
@@ -26,7 +31,9 @@ const Post = () => {
 		authorName:"Tejaswa Gupta",
 		tags: [],
 		authorAvatarSrc: "/images/new-logo.webp",
-		content: "",
+		content: `
+		UNDER ACTIVE CONSTRUCTION
+		`,
 		date:"date"
 	}; 
 
