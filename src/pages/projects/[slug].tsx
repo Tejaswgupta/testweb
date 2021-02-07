@@ -16,11 +16,7 @@ const Post = () => {
 
 	const router = useRouter();
 	const { project_name, project_description , project_image , tags } = router.query;
-	// const x = tags ?? ["Misc"];
 
-	useEffect(() => {
-		console.log(tags);
-	});
 
 	const customProp: DetailedPost = {
 		title: project_name as string,  
@@ -35,17 +31,17 @@ const Post = () => {
 	}; 
 
 	return (
-		<BlogPostLayout
-			title= {project_name as string} 
-			description={project_description as string}
-			coverSrc={project_image as string}
-			slug={project_name as string}
-		>
-			{/* <PostSingleSection
-				{...customProp}
-			/> */}
-			<h1> TEST </h1>
-		</BlogPostLayout>
+		// <BlogPostLayout
+		// 	title= {project_name as string} 
+		// 	description={project_description as string}
+		// 	coverSrc={project_image as string}
+		// 	slug={project_name as string}
+		// >
+		<PostSingleSection
+			{...customProp}
+		/>
+
+	// </BlogPostLayout>
 	);
 
 	// return(
