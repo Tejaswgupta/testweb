@@ -12,7 +12,6 @@ type BlogPostLayoutProps = {
 	title: string;
 	description: string;
 	coverSrc: string;
-	authorName: string;
 
 };
 

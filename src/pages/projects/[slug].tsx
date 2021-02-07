@@ -2,13 +2,15 @@ import React, { useEffect } from "react"
 import { NextPage } from "next"
 import { useRouter } from "next/router"
 
-import {
-	DetailedPost,
-} from "@/lib/posts"
 
 import BlogPostLayout from "@/layouts/BlogPost"
 
 import PostSingleSection from "@/views/Projects/PostSingle"
+
+import {
+	DetailedPost,
+} from "@/lib/posts"
+
 
 const Post = () => {
 
@@ -24,7 +26,7 @@ const Post = () => {
 		title: project_name as string,  
 		description: project_description as string, 
 		coverSrc: project_image as string,
-		slug:"{post.slug}",
+		slug:project_name as string,
 		authorName:"Tejaswa Gupta",
 		tags: [],
 		authorAvatarSrc: "/images/new-logo.webp",
@@ -32,25 +34,24 @@ const Post = () => {
 		date:"date"
 	}; 
 
-	// return (
-	// 	<BlogPostLayout
-	// 		title= {project_name as string} 
-	// 		description={project_description as string}
-	// 		coverSrc={project_image as string}
-	// 		slug="{post.slug}"
-	// 		authorName='Tejaswa Gupta'
-	// 	>
-	// 		<PostSingleSection
-	// 			{...customProp}
-	// 		/>
-	// 	</BlogPostLayout>
-	// );
-
-	return(
-		<h1>
-			TEST PAGE { project_name} {project_description } {tags}
-		</h1>
+	return (
+		<BlogPostLayout
+			title= {project_name as string} 
+			description={project_description as string}
+			coverSrc={project_image as string}
+			slug={project_name as string}
+		>
+			<PostSingleSection
+				{...customProp}
+			/>
+		</BlogPostLayout>
 	);
+
+	// return(
+	// 	<h1>
+	// 		TEST PAGE { project_name} {project_description } {tags}
+	// 	</h1>
+	// );
 
 }
 
