@@ -41,9 +41,10 @@ const Post = () => {
 			coverSrc={project_image as string}
 			slug={project_name as string}
 		>
-			<PostSingleSection
+			{/* <PostSingleSection
 				{...customProp}
-			/>
+			/> */}
+			<h1> TEST </h1>
 		</BlogPostLayout>
 	);
 
