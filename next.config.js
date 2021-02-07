@@ -41,4 +41,5 @@ module.exports = withPlugins([
 	images: {
 		domains: ["images.unsplash.com"]
 	},
+	future: { webpack5: true},
 })
