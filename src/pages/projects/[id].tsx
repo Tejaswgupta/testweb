@@ -1,15 +1,3 @@
-// import { useRouter } from "next/router"
-// import React from "react";
-
-// const Post = () => {
-// const router = useRouter();
-// const { project_name, project_description } = router.query;
-
-// 	return <p>Post is: {project_name + "and " + project_description}</p>
-// }
-
-// export default Post
-
 import React, { useEffect } from "react"
 import { NextPage } from "next"
 
