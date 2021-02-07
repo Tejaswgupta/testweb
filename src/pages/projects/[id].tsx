@@ -26,7 +26,7 @@ type PostProps = {
 	post: DetailedPost
 }
 
-const Post: NextPage<PostProps> = (props) => {
+const Post: NextPage<PostProps> = () => {
 
 	const router = useRouter();
 	const { project_name, project_description , project_image , tags } = router.query;
