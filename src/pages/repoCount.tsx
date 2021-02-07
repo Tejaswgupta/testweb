@@ -19,7 +19,7 @@ const repoCount: NextPage = () => {
 		<div>
 			
 
-			<h1>{+data.count.data.owned_private_repos + +data.count.data.public_repos}</h1>
+			<h1>Github Repository Count: {+data.count.data.owned_private_repos + +data.count.data.public_repos}</h1>
 					
 		
 
