@@ -32,19 +32,26 @@ const Post = () => {
 		date:"date"
 	}; 
 
-	return (
-		<BlogPostLayout
-			title= {project_name as string} 
-			description={project_description as string}
-			coverSrc={project_image as string}
-			slug="{post.slug}"
-			authorName='Tejaswa Gupta'
-		>
-			<PostSingleSection
-				{...customProp}
-			/>
-		</BlogPostLayout>
-	)
+	// return (
+	// 	<BlogPostLayout
+	// 		title= {project_name as string} 
+	// 		description={project_description as string}
+	// 		coverSrc={project_image as string}
+	// 		slug="{post.slug}"
+	// 		authorName='Tejaswa Gupta'
+	// 	>
+	// 		<PostSingleSection
+	// 			{...customProp}
+	// 		/>
+	// 	</BlogPostLayout>
+	// );
+
+	return(
+		<h1>
+			TEST PAGE { project_name} {project_description } {tags}
+		</h1>
+	);
+
 }
 
 
