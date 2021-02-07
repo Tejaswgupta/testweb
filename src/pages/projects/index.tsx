@@ -1,7 +1,6 @@
 import React from "react"
-import { GetStaticProps, NextPage } from "next"
+import { NextPage } from "next"
 
-import { getAllDetailedPosts, DetailedPost } from "@/lib/posts"
 
 import BlogLayout from "@/layouts/Blog"
 
