@@ -13,8 +13,8 @@ const repoCount: NextPage = () => {
 
 	
 
-	if (error) return <div>failed to load</div>
-	if (!data) return <h1>Loading...</h1>	
+	// if (error) return <div>failed to load</div>
+	// if (!data) return <h1>Loading...</h1>	
 
 	return(
 		<Content>
