@@ -7,7 +7,7 @@ const CoffeeLoading: React.FC = () => {
 	const [showCup, setShowCup] = useState(false)
 
 	useEffect(() => {
-		setTimeout(() => setShowCup(true), 50)
+		setTimeout(() => setShowCup(true), 10)
 		setTimeout(() => {
 			setShowCup(false)
 			setShowLoad(false)

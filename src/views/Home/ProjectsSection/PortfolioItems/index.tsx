@@ -17,7 +17,7 @@ const PortfolioItems: FC<PortfolioItemsProps> = () => {
 		const scrollDownMakeProjectsAppear = () => {
 			const valueScrolledByUser = window.scrollY;
 			const pageTotalHeight = document.body.offsetHeight - window.innerHeight;
-			if (valueScrolledByUser > pageTotalHeight * 0.31)
+			if (valueScrolledByUser > pageTotalHeight * 0.21)
 			// scrolled 31% of page
 				SetScrolledToProjects(true);
 			else SetScrolledToProjects(false);
@@ -70,7 +70,7 @@ const PortfolioItems: FC<PortfolioItemsProps> = () => {
 							<S.WorkItemButton>
 								<Link 	
 									as={`projects/${project_name}`}
-									href={{ pathname:`projects/${project_name}` , query: { project_name: `${project_name}` , project_description: `${project_description}` , project_image: `${project_image}` , tags: `${tags ?? ["Misc", "New"]}`}}}
+									href={{ pathname:"projects/[slug]" , query: { project_name: `${project_name}` , project_description: `${project_description}` , project_image: `${project_image}` , tags: `${tags ?? ["Misc", "New"]}`}}}
 								>
 									<a>
                   Visit <span>→</span>

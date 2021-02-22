@@ -35,7 +35,7 @@ export const PostCover = styled(LazyLoadedImage)`
 
 	img {
 		width:100%;
-		object-fit: fill;
+		object-fit: contain;
 		object-position: center;
 	}
 `

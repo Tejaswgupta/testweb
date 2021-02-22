@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import { NextPage } from "next"
+import { GetStaticPaths, GetStaticProps, NextPage } from "next"
 import { useRouter } from "next/router"
 
 
@@ -9,6 +9,7 @@ import PostSingleSection from "@/views/Projects/PostSingle"
 
 import {
 	DetailedPost,
+	getAllPostIds, getPostData,
 } from "@/lib/posts"
 
 
@@ -22,6 +23,8 @@ const Post = () => {
 		"/images/new-logo.webp",
 		"/images/new-logo.webp",
 	];
+
+	console.log(getPostData("Lesuv"));
 
 	const customProp: DetailedPost = {
 		title: project_name as string,  
@@ -60,17 +63,27 @@ const Post = () => {
 }
 
 
-export default Post
+export default Post;
 
 
-// import { useRouter } from "next/router"
-// import React from "react"
 
-// const Post = () => {
-// 	const router = useRouter()
-// 	const { pid } = router.query
 
-// 	return <p>Post: {pid}</p>
+
+
+
+// export async function getStaticPaths() {
+// 	const paths = getAllPostIds()
+// 	return {
+// 		paths,
+// 		fallback: false
+// 	}
 // }
 
-// export default Post
+// export async function getStaticProps({ params }) {
+// 	const postData = getPostData(params.id)
+// 	return {
+// 		props: {
+// 			postData
+// 		}
+// 	}
+// }

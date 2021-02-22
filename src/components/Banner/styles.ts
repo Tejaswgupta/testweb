@@ -106,4 +106,3 @@ align-items: center;
 justify-content: center;
 `
 
-// background-image: url('/banner-bg.png');

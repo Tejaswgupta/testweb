@@ -53,9 +53,7 @@ const Navbar: React.FC = () => {
 					href={appUrls.home}
 					target="_self"
 					rel="noreferrer"
-				>	
-
-									
+				>						
 				</LogoLink>
 
 				
