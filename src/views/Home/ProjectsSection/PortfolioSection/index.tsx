@@ -18,11 +18,11 @@ const PortfolioSection: React.FC= () => {
 					description="A brief list of my projects"
 				/>
 				<PortfolioItems />
-				<SeeMoreContainer>
+				{/* <SeeMoreContainer>
 					<Button href={appUrls.projects}>
 						CLICK HERE TO SEE MORE
 					</Button>
-				</SeeMoreContainer>
+				</SeeMoreContainer> */}
 			</S.PortfolioSectionContent>
 		</S.PortfolioSectionContainer>
 	);
