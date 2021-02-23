@@ -72,6 +72,7 @@ export const WorkItemDescription = styled.p`
     line-height: 1.7;
     font-family: Montserrat;
     color: var(--gray-color-15);
+    width:40vh;
 
     margin: 30px 0px;
     @media (max-width: ${theme.media.small}) {

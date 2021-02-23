@@ -1,7 +1,7 @@
 [
   {
     "project_name": "Paravijjyan",
-    "project_description": "Revolutionising mindfulness practices using cutting edge , Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque viverra purus, in iaculis tortor dictum ac. Duis ut quam neque.  Donec et enim eu tortor varius egestas. Etiam at leo non justo rutrum ullamcorper. ",
+    "project_description": "Traditional mindfulness practices are hard and require someone to take you through step by step. In the post COVID world trainer might be not be the best option and video calls are not reliable for assessing the practices. So, we developed state of the art AI algorithm that would help you do exactly everything that a trainer would but in a more precise way. Allowing you to live a better and more healthy life .",
     "project_url": "",
     "project_git": "",
     "project_image": "https://images.unsplash.com/photo-1611489704223-fd10d4fb0afb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1875&q=80",
@@ -9,7 +9,7 @@
   },
   {
     "project_name": "DePass",
-    "project_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque viverra purus, in iaculis tortor dictum ac. Duis ut quam neque. Donec et enim eu tortor varius egestas. Etiam at leo non justo rutrum ullamcorper. Maecenas eget ligula metus. Morbi vitae feugiat urna, eget euismod metus. Donec augue ex, blandit.",
+    "project_description": "With data breaches increasing at an unimaginable rate over time , global privacy is at stake. We counter this by using decentralised mechanisms so that no one could get close to something that is solely belongs to you.",
     "project_url": "",
     "project_git": "",
     "project_image": "https://images.unsplash.com/photo-1611317621987-e2f42a363e5c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1887&q=80",
@@ -23,14 +23,7 @@
     "tags": ["React"],
    "project_image": "https://images.unsplash.com/photo-1611758455043-7894c5649243?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1875&q=80"
 },
-  {
-    "project_name": "MLAI",
-    "project_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque viverra purus, in iaculis tortor dictum ac. Duis ut quam neque. Donec et enim eu tortor varius egestas. Etiam at leo non justo rutrum ullamcorper. Maecenas eget ligula metus. Morbi vitae feugiat urna, eget euismod metus. Donec augue ex, blandit.",
-    "project_url": "",
-    "project_git": "",
-    "tags": ["Machine Learning", "Healthcare"],
-    "project_image":"https://images.unsplash.com/photo-1611845242407-ca3cc476eade?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1539&q=80"
-  },
+
   {
     "project_name": "Lesuv",
     "project_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque viverra purus, in iaculis tortor dictum ac. Duis ut quam neque. Donec et enim eu tortor varius egestas. Etiam at leo non justo rutrum ullamcorper. Maecenas eget ligula metus. Morbi vitae feugiat urna, eget euismod metus. Donec augue ex, blandit.",
@@ -42,3 +35,4 @@
   }
 
 ]
+
