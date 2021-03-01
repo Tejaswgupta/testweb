@@ -17,16 +17,16 @@
   },
   {
     "project_name": "Dinin",
-    "project_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque viverra purus, in iaculis tortor dictum ac. Duis ut quam neque. Donec et enim eu tortor varius egestas. Etiam at leo non justo rutrum ullamcorper. Maecenas eget ligula metus. Morbi vitae feugiat urna, eget euismod metus. Donec augue ex, blandit.",
-    "project_url": "",
+    "project_description": "Dinin enables you to order pre-prepared food items from us and get it delivered in less than an hour so that you can cook and enjoy that bbq with your friends rather than going through the hassle of preparing and waiting for hours",
+     "project_url": "",
     "project_git": "",
     "tags": ["React"],
    "project_image": "https://images.unsplash.com/photo-1611758455043-7894c5649243?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1875&q=80"
 },
 
   {
-    "project_name": "Lesuv",
-    "project_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque viverra purus, in iaculis tortor dictum ac. Duis ut quam neque. Donec et enim eu tortor varius egestas. Etiam at leo non justo rutrum ullamcorper. Maecenas eget ligula metus. Morbi vitae feugiat urna, eget euismod metus. Donec augue ex, blandit.",
+    "project_name": "TMovies",
+    "project_description": "TMovies allows you to watch most of your favourite shows from the web but with a cleaner and better UI so that so focus more on ejoying rather than trying navigate that messy interface or skipping ads",  
     "project_url": "",
     "project_git": "",
     "tags": ["Android", "iOS"],
