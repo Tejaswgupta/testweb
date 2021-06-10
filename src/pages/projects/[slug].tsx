@@ -5,10 +5,9 @@ import { useRouter } from "next/router"
 
 // import BlogPostLayout from "@/layouts/BlogPost" //! BlogPostLayout causing error on server due to some reason.
 
-import PostSingleSection from "@/views/Projects/PostSingle"
+import PostSingleSection, { DetailedPost } from "@/views/Projects/PostSingle"
 
 import {
-	DetailedPost,
 	getAllPostIds, getPostData,
 } from "@/lib/posts"
 

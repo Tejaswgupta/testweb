@@ -44,17 +44,6 @@
 // 	return shareUrls
 // }
 
-export type DetailedPost = {
-	title: string
-	description: string
-	coverSrc: string
-	tags: string[]
-	content: string
-	slug: string
-	authorName: string
-	authorAvatarSrc: string
-	date: string
-}
 
 // export const getDetailedPostBySlug = async (slug: string): Promise<DetailedPost> => {
 // 	const postFilePath = path.join(POST_FOLDER_PATH, `${slug}.md`)
@@ -109,20 +98,20 @@ export type DetailedPost = {
 
 import projects from "../views/Home/ProjectsSection/PortfolioItems/projects.json";
 
+
+
 export const getAllPostIds = () => {
-
-
-	return projects.map(project => {
+	return projects.map((project) => {
 		return {
 			params: {
 				slug: project.project_name,
-			} 
-		}
-	})
-}
+			},
+		};
+	});
+};
 
-export function getPostData(id) {
-	let data = {};
+export const getPostData = (id) => {
+	let data;
 	projects.map((project)=>{
 		data = project.project_name == id ? project : {};
 	})

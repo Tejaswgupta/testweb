@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next"
 
-import { getAllDetailedPosts, getDetailedPostBySlug } from "@/lib/posts"
+import { getPostData, getAllPostIds } from "@/lib/posts"
 import { getLatestDate } from "@/lib/date"
 import { getSiteBaseURL } from "@/lib/url"
 import { handleError } from "@/lib/error"
@@ -9,19 +9,19 @@ import { getRssXML, GetRssXMLProps } from "@/templates/rss"
 
 export default async (req: NextApiRequest, res: NextApiResponse): Promise<void> => {
 	try {
-		const previewPosts = await getAllDetailedPosts()
+		const previewPosts = getAllPostIds()
 
 		const baseURL = getSiteBaseURL(req)
 
 		const posts: GetRssXMLProps["posts"] = await Promise.all(
 			previewPosts.map(async previewPost => {
-				const { slug } = previewPost
+				const { params } = previewPost
 
-				const post = await getDetailedPostBySlug(slug)
+				const post = getPostData(params.slug)
 
 				return {
 					title: post.title,
-					link: `${baseURL}/${slug}`,
+					link: `${baseURL}/${params.slug}`,
 					description: post.description,
 					content: post.content,
 					date: new Date(post.date).toUTCString()

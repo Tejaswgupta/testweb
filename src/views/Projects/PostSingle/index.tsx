@@ -1,7 +1,5 @@
 import React from "react"
 
-import { DetailedPost } from "@/lib/posts"
-
 import {
 	PostSingleSectionContainer,
 	PostSingleSectionContent,
@@ -9,6 +7,19 @@ import {
 	PostContent
 } from "@/views/Projects/PostSingle/styles"
 import { PostInfo } from "@/components"
+
+
+export type DetailedPost = {
+	title: string
+	description: string
+	coverSrc: string
+	tags: string[]
+	content: string
+	slug: string
+	authorName: string
+	authorAvatarSrc: string
+	date: string
+}
 
 
 const PostSingle: React.FC<DetailedPost> = (props) => {

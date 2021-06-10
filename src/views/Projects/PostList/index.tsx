@@ -1,7 +1,6 @@
 import React from "react"
 import Link from "next/link"
 
-import { DetailedPost } from "@/lib/posts"
 import { chunk, orderBy } from "@/lib/array"
 import projects from "../../Home/ProjectsSection/PortfolioItems/projects.json"
 import RepoCount from "../../../components/RepoCount"
