@@ -19,8 +19,8 @@ type HomeLayoutProps = {
 const HomeLayout: React.FC<HomeLayoutProps> = (props) => {
 	const { children, isMobile } = props
 
-	const title = "Tejaswa Gupta"
-	const description = "Tejaswa Gupta's Portfolio"
+	const 	title =  "Paravijjyan: Your Personal Mindfulness Assistant";
+	const description = "Paravijjyan uses Machine learning you help you do yoga more interactively";
 
 	return (
 		<HomeContainer>

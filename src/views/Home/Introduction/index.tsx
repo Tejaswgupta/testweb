@@ -24,7 +24,7 @@ const IntroductionSection: React.FC = () => (
 				spotlightWidth="170px"
 				type="Introduction"
 				title="Tejaswa Gupta."
-				description="A problem solver who knows that knows nothing, passionate about cloud computing and complex systems."
+				description=""
 			/>
 
 			<Spotlight
