@@ -11,7 +11,6 @@ export const Container = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  
 
   p {
     font-size: 32px;
@@ -22,63 +21,14 @@ export const Container = styled.div`
     text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
   }
 
-  @media (min-width: ${props => props.theme.screens.medium}) {
+  @media (min-width: ${(props) => props.theme.screens.medium}) {
+    flex-direction: row;
     p {
       font-size: 75px;
     }
   }
-`
+`;
 
-export const KeepGoingButton = styled.a`
-  color: var(--gray-color-15);
-  font-size: 24px;
-  height: 120px;
-  display: flex;
-  align-items: flex-end;
-  cursor:pointer;
-  z-index:6;
-  margin-bottom:5vh;
- 
-
-  &:hover{
-    opacity:0.5;
-  }
-
-  svg {
-    animation-name: bounce;
-    animation-timing-function: ease;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-  }
-
-  @media (min-width: ${props => props.theme.screens.medium}) {
-    font-size: 40px;
-  }
-
-  @keyframes bounce {
-    0% {
-      transform: scale(1, 1) translateY(0);
-    }
-    10% {
-      transform: scale(1.1, 0.9) translateY(0);
-    }
-    30% {
-      transform: scale(0.9, 1.1) translateY(-60px);
-    }
-    50% {
-      transform: scale(1, 1) translateY(0);
-    }
-    57% {
-      transform: scale(1, 1) translateY(-7px);
-    }
-    64% {
-      transform: scale(1, 1) translateY(0);
-    }
-    100% {
-      transform: scale(1, 1) translateY(0);
-    }
-  }
-`
 
 export const FrontPageTitle = styled.h1`
 font-size: calc(5vw + 1rem);
@@ -99,10 +49,22 @@ padding-bottom:5vh;
 `
 
 export const FrontPageContainer = styled.div`
-height:100vh;
+height:20vh;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 `
 
+export const ComingSoonContainer = styled.div`
+  font-weight: 100;
+  font-size: calc(1vw + 1rem);
+  user-select: none;
+  color: var(--gray-color-15);
+  padding-bottom: 5vh;
+`;
+
+export const LandingImage = styled.img`
+height: 60vh;
+margin-left: 3vw;
+`;

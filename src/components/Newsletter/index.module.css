@@ -1,0 +1,36 @@
+.email {
+    height: 2vh;
+    width:100%;
+    background-color: #fff122;
+    border-radius: 2rem;
+    padding:0 1rem 0 0.5rem;
+    color: red;
+    display: flex;
+  }
+  
+  .email input {
+    border: none;
+    float: left;
+    height: 4rem;
+    line-height: 4rem;
+    border-radius: 2rem;
+    text-align: left;
+    padding-left: 1rem;
+    font-family: Syne, sans-serif;
+    width:50%;
+    font-size: 0.9rem;
+  }
+  
+  .email button {
+    height: 2.8rem;
+    background-color:   #FF96C8;
+    border-radius: 1.5rem;
+    border: none;
+    color: #fff;
+    padding: 0 16px;
+    font-family: Syne, sans-serif;
+    font-size: 0.75rem;
+    float: right;
+    position: relative;
+    top: 0.6rem;
+  }

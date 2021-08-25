@@ -5,18 +5,11 @@ import dynamic from "next/dynamic";
 import HomeLayout from "@/layouts/Home";
 
 
-const TimelineSection = dynamic(() => import("@/views/Home/Timeline"));
-const SkillsSection = dynamic(() => import("@/views/Home/Skills"));
-const ContactSection = dynamic(() => import("@/views/Home/Contact"));
-const QuotesSection = dynamic(() => import("@/views/Home/Quotes"));
+
 const Banner = dynamic(()=> import("../../components/Banner")) ;
 const CoffeeLoading = dynamic(() => import("@/components/CoffeeLoading"));
-const PortfolioSection = dynamic(() => import("./ProjectsSection/PortfolioSection/index"));
-
-
 import { getServerDeviceInfo } from "@/lib/device"
-import IntroductionSection from "./Introduction";
-import { Footer } from "@/components/Footer";
+
 
 
 type HomeProps = {
@@ -35,11 +28,11 @@ const Home: NextPage<HomeProps> = (props) => {
 			{/* <Leon onComplete={useIntroContext} color={"black"}/> */}
 			<Banner />
 			{/* <TimelineSection /> */}
-			<SkillsSection />
-			<PortfolioSection/>
+			{/* <SkillsSection />
+			<PortfolioSection/> */}
 			{/* <QuotesSection /> */}
-			<ContactSection />
-			<Footer/>
+			{/* <ContactSection />
+			<Footer/> */}
 		</HomeLayout>
 	);
 };

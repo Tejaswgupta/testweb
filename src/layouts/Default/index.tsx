@@ -2,8 +2,6 @@ import React from "react";
 import Head from "next/head";
 import GoogleFonts from "next-google-fonts";
 
-import { Navbar } from "@/components";
-
 import { buildCDNUrl } from "@/lib/cdn";
 
 const DefaultLayout: React.FC = (props) => {
@@ -43,7 +41,6 @@ const DefaultLayout: React.FC = (props) => {
 				<script defer type="text/javascript" src="https://static.guilherr.me/js/gtm.js"></script> */}
 			</Head>
 
-			<Navbar />
 
 			{children}
 		</>
