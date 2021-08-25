@@ -7,7 +7,7 @@ import HomeLayout from "@/layouts/Home";
 
 
 const Banner = dynamic(()=> import("../../components/Banner")) ;
-const CoffeeLoading = dynamic(() => import("@/components/CoffeeLoading"));
+// const CoffeeLoading = dynamic(() => import("@/components/CoffeeLoading"));
 import { getServerDeviceInfo } from "@/lib/device"
 
 
@@ -23,7 +23,7 @@ const Home: NextPage<HomeProps> = (props) => {
 		<HomeLayout >
 			
 			{/* <Header /> */}
-			<CoffeeLoading />
+			{/* <CoffeeLoading /> */}
 			{/* <IntroductionSection /> */}
 			{/* <Leon onComplete={useIntroContext} color={"black"}/> */}
 			<Banner />
